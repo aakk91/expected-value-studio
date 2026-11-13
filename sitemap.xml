@@ -1,12 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://expectedvaluestudio.com/</loc></url><url>
+  <url>
+    <loc>https://expectedvaluestudio.com/</loc>
+  </url>
+  <url>
     <loc>https://expectedvaluestudio.com/preflight/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/preflight-legal/</loc>
@@ -18,7 +21,7 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/adf-aptitude-tests-joa-officer-aviation.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/afcat-exam-preparation.html</loc>
@@ -26,7 +29,7 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/afoqt-practice-app.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/airservices-air-traffic-control-test.html</loc>
@@ -34,7 +37,7 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/aon-assessment-jobs.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/astb-practice-test.html</loc>
@@ -66,15 +69,15 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/bundesheer-eignungspruefung-ueben.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/bundeswehr-einstellungstest-cat-test-ueben.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/capaciteitentest-politie-defensie.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/cfat-seaf-canadian-forces.html</loc>
@@ -118,7 +121,7 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/nypd-police-exam-preparation.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/pilapt-test.html</loc>
@@ -126,15 +129,15 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/polizei-einstellungstest-kostenlos-ueben.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/psicotecnicos-guardia-civil-policia-nacional.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/rcmp-entrance-assessment-preparation.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/rsaf-compass-pilot-selection.html</loc>
@@ -170,11 +173,11 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/tests-entree-enpq-police-quebec.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/us-military-aviation-aptitude-tests.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/tests-psychotechniques-france.html</loc>
@@ -182,11 +185,11 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/aptitude-tests-usa.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/eignungstest-deutschland-kostenlos-ueben.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/aptitude-tests-canada.html</loc>
@@ -218,7 +221,7 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/mechanical-comprehension-practice.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/preparation-screening-sphair.html</loc>
@@ -282,15 +285,15 @@
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/aptitude-tests-uk.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/raf-daa-practice-test.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/army-cognitive-test-practice.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://expectedvaluestudio.com/guides/raf-cbat-preparation.html</loc>
@@ -312,7 +315,7 @@
     <loc>https://expectedvaluestudio.com/guides/luchtverkeersleider-aandacht-oefenen.html</loc>
     <lastmod>2026-11-06</lastmod>
   </url>
-<url>
+  <url>
     <loc>https://expectedvaluestudio.com/labrats-legal/</loc>
     <lastmod>2026-10-24</lastmod>
   </url>
@@ -364,10 +367,64 @@
     <loc>https://expectedvaluestudio.com/labrats-legal/support.html</loc>
     <lastmod>2026-10-24</lastmod>
   </url>
-<url><loc>https://expectedvaluestudio.com/nobody/</loc><lastmod>2026-11-12</lastmod></url>
-<url><loc>https://expectedvaluestudio.com/nobody/fr/</loc><lastmod>2026-11-12</lastmod></url>
-<url><loc>https://expectedvaluestudio.com/nobody/privacy/</loc><lastmod>2026-11-12</lastmod></url>
-<url><loc>https://expectedvaluestudio.com/nobody/support/</loc><lastmod>2026-11-12</lastmod></url>
-<url><loc>https://expectedvaluestudio.com/nobody/index.md</loc><lastmod>2026-11-12</lastmod></url>
-<url><loc>https://expectedvaluestudio.com/nobody/llms.txt</loc><lastmod>2026-11-12</lastmod></url>
+  <url>
+    <loc>https://expectedvaluestudio.com/nobody/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/nobody/fr/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/nobody/privacy/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/nobody/support/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/nobody/index.md</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/nobody/llms.txt</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/asvab-practice-test.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/border-patrol-entrance-exam-practice.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/bundespolizei-intelligenztest-ueben.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/civil-service-verbal-numerical-test-practice.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/cognitietest-politie-oefenen.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/evaluation-en-ligne-grc-pratique.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/hogskoleprovet-ova-gratis.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/polizei-aufnahmetest-oesterreich-ueben.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://expectedvaluestudio.com/guides/psicotecnicos-guardia-civil-simulacro.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
 </urlset>

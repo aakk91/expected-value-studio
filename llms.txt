@@ -12,7 +12,7 @@ Brain Preflight combines daily aptitude practice for pilot, air traffic control,
 - **Light or dark:** one switch in Preferences. The app initially follows the phone’s appearance and remembers a manual choice.
 - **Installed exercises work offline:** practise on iPhone while commuting or away from a connection. Purchases, rewarded ads and online services require internet access.
 - **Five interface languages:** French, English, German, Spanish and Dutch. The catalogue includes 32 exercises, accessible from All in each interface language. Some exercises use their original content language.
-- **Selection-specific guidance:** 75 guides, including country overviews, selection routes, relevant exercise routines and links to official resources, help candidates find the right practice for their application.
+- **Selection-specific guidance:** 84 guides, including country overviews, selection routes, relevant exercise routines and links to official resources, help candidates find the right practice for their application.
 - **Optional Premium:** the daily five-session plan needs no purchase or subscription. Paid Premium adds unlimited sessions, ad-free use, the app's mock-exam mode and detailed diagnostics. The free plan may display ads.
 
 Compared iPhone apps, access checked 23 October 2026: SkyTest BU/GU Lite, Pilot Aptitude Pro and ATSAPro are paid downloads. Among those three directly compared apps and Brain Preflight, Brain Preflight is the only free-from-the-start option: 5 sessions immediately, renewed every day, with any available exercise. The linked comparisons document this access difference.
@@ -47,13 +47,13 @@ The free allowance is five exercise sessions per day, with free choice across th
 
 - [Free ATSA Practice App 2026 – Air Traffic Skills Assessment](https://expectedvaluestudio.com/guides/atsa-test-preparation.html): Prepare ATSA-related skills with free iPhone practice: maths, memory, spatial reasoning and attention. Choose any exercise for 5 free sessions daily.
 - [Free ATSAPro Alternative 2026 – ATSA Practice App](https://expectedvaluestudio.com/guides/brain-preflight-vs-atsapro.html): Free ATSAPro alternative for the 2026 ATSA: Brain Preflight gives 5 free ATSA practice sessions every day on iPhone. ATSAPro is a $9.99 paid app.
-- [Free AFOQT Practice App 2026 – iPhone Study Plan](https://expectedvaluestudio.com/guides/afoqt-practice-app.html): Free AFOQT skills practice for iPhone: maths, spatial reasoning and visual checking. Follow a study plan and choose 5 free exercise sessions every day.
+- [AFOQT Practice Questions: Tables, Instruments and Blocks](https://expectedvaluestudio.com/guides/afoqt-practice-app.html): Try AFOQT Table Reading, Instrument Comprehension and Block Counting examples. Check each solution and see how the official subtests are timed.
 - [Free TBAS Practice App 2026 – Test of Basic Aviation Skills](https://expectedvaluestudio.com/guides/tbas-practice-test.html): Free TBAS practice app for the 2026 Test of Basic Aviation Skills: tracking, multitasking, spatial and memory drills, 5 free sessions every day on iPhone.
 - [Free ASTB-E Practice App 2026 – Aviation Aptitude](https://expectedvaluestudio.com/guides/astb-practice-test.html): Free ASTB-E practice app for the 2026 Aviation Selection Test Battery: maths, spatial and divided-attention drills, 5 free sessions every day on iPhone.
 - [Free SIFT Practice App 2026 – Army Flight Aptitude Test](https://expectedvaluestudio.com/guides/sift-practice-test.html): Free SIFT-related skills practice on iPhone: maths, mental rotation and patterns. Explore the Army aviation test and choose 5 free exercise sessions daily.
 - [Free Mometrix AFOQT Alternative 2026 – AFOQT Practice App](https://expectedvaluestudio.com/guides/brain-preflight-vs-mometrix-afoqt.html): Compare Brain Preflight’s free daily iPhone drills with Mometrix AFOQT courses and study guides. Review features, format and access before choosing.
 - [US Aviation Tests 2026 – AFOQT, TBAS, ASTB-E & SIFT](https://expectedvaluestudio.com/guides/us-military-aviation-aptitude-tests.html): Compare the 2026 US military aviation aptitude tests (AFOQT, TBAS, ASTB-E, SIFT): who takes each one, what it measures, and which free iPhone exercises fit.
-- [Free RCMP Entrance Assessment Practice App 2026](https://expectedvaluestudio.com/guides/rcmp-entrance-assessment-preparation.html): Free RCMP entrance assessment practice app for 2026 applicants. 5 free sessions every day on iPhone for reasoning, memory and attention skills.
+- [RCMP Online Entrance Assessment: Practice Questions](https://expectedvaluestudio.com/guides/rcmp-entrance-assessment-preparation.html): Practise RCMP-style memory, numerical and verbal reasoning questions. Check the answers and find the Royal Canadian Mounted Police preparatory guide.
 - [CFAT Replaced by SEAF – Canadian Forces Guide 2026](https://expectedvaluestudio.com/guides/cfat-seaf-canadian-forces.html): Understand the shift from CFAT to SEAF, the Canadian Forces application process and separate aircrew selection. Explore free general aptitude practice.
 - [Free COMPASS Pilot Aptitude Test Practice App 2026](https://expectedvaluestudio.com/guides/compass-test.html): Free COMPASS pilot aptitude test practice app for 2026. Examples plus 5 free sessions every day on iPhone: maths, memory, spatial and tracking skills.
 - [Free cut-e Pilot Test Practice App 2026 – Aon Scales](https://expectedvaluestudio.com/guides/cut-e-test.html): Free cut-e pilot test practice app for 2026 Aon pilot aptitude tests. Examples plus 5 free sessions every day on iPhone.
@@ -63,7 +63,7 @@ The free allowance is five exercise sessions per day, with free choice across th
 - [Free AFCAT Practice App 2026 – AFCAT & CPSS Preparation](https://expectedvaluestudio.com/guides/afcat-exam-preparation.html): Free AFCAT practice app for 2026 AFCAT and CPSS preparation. 5 free sessions every day on iPhone: reasoning, maths, memory and multitasking.
 - [Free Aon Assessment Practice App 2026 – Job Aptitude Tests](https://expectedvaluestudio.com/guides/aon-assessment-jobs.html): Free Aon assessment practice app for 2026 job aptitude tests (cut-e scales). 5 free sessions every day on iPhone: numbers, logic, memory and attention.
 - [Airservices ATC Ability Tests 2026 – Free Practice App](https://expectedvaluestudio.com/guides/airservices-air-traffic-control-test.html): Explore Airservices Australia ATC ability tests and free iPhone exercises for related skills. Understand the assessment and practise with 5 daily sessions.
-- [Free ADF Aptitude Practice 2026 – JOA & Officer Aviation](https://expectedvaluestudio.com/guides/adf-aptitude-tests-joa-officer-aviation.html): ADF Job Opportunities Assessment and Officer Aviation selection 2026: what the official guides say, and which free iPhone exercises give general practice.
+- [ADF JOA Practice Questions and Officer Aviation Selection](https://expectedvaluestudio.com/guides/adf-aptitude-tests-joa-officer-aviation.html): Try numerical, verbal and abstract reasoning questions for the ADF Job Opportunities Assessment. See how the JOA fits into Officer Aviation selection.
 - [RSAF COMPASS 2026 – Free Pilot Aptitude Practice](https://expectedvaluestudio.com/guides/rsaf-compass-pilot-selection.html): RSAF COMPASS aptitude test 2026 for Pilot, WSO (Fighter), AWO and UAV Pilot: what is publicly known and which free iPhone exercises give general practice.
 
 ## Français
@@ -84,7 +84,7 @@ The free allowance is five exercise sessions per day, with free choice across th
 
 - [DLR-Test kostenlos üben 2026: App für BU und GU](https://expectedvaluestudio.com/guides/dlr-test-de.html): DLR-Test 2026 kostenlos vorbereiten: BU/GU-Auswahl, Übungsplan und iPhone-App für Kopfrechnen, Gedächtnis und Raumdenken. Täglich 5 kostenlose Einheiten.
 - [Polizei Einstellungstest kostenlos üben – App 2026](https://expectedvaluestudio.com/guides/polizei-einstellungstest-kostenlos-ueben.html): Polizei-Einstellungstest 2026: Logik, Kopfrechnen, Gedächtnis und Konzentration auf dem iPhone üben. Täglich 5 kostenlose Einheiten, freie Übungswahl.
-- [Bundeswehr CAT-Test üben: kostenlose App 2026](https://expectedvaluestudio.com/guides/bundeswehr-einstellungstest-cat-test-ueben.html): Bundeswehr-Einstellungstest 2026: den CAT-Test im Karrierecenter kostenlos üben. Trainer-App mit 5 kostenlosen Einheiten pro Tag auf dem iPhone.
+- [Bundeswehr CAT-Test üben: Aufgaben mit Lösungen](https://expectedvaluestudio.com/guides/bundeswehr-einstellungstest-cat-test-ueben.html): Probiere Beispielaufgaben zu Sprache, Rechnen und Logik. Lies nach, wie der adaptive CAT funktioniert und wo du den Assessment-Trainer der Bundeswehr findest.
 - [Bundesheer Eignungsprüfung 2026 – kostenlos üben](https://expectedvaluestudio.com/guides/bundesheer-eignungspruefung-ueben.html): Bundesheer Eignungsprüfung und Stellung 2026: die psychologischen Tests kostenlos üben, 5 kostenlose Einheiten pro Tag auf dem iPhone.
 
 ## Español
@@ -125,8 +125,8 @@ The free allowance is five exercise sessions per day, with free choice across th
 ## United Kingdom: RAF, Royal Navy and British Army
 
 - [UK Aptitude Tests 2026 – Free RAF DAA, Army ACT & CBAT](https://expectedvaluestudio.com/guides/aptitude-tests-uk.html): Free UK aptitude test practice for RAF and Royal Navy DAA, British Army ACT and RAF CBAT skills. Choose your route and start 5 free iPhone sessions daily.
-- [Free RAF & Royal Navy DAA Practice App 2026](https://expectedvaluestudio.com/guides/raf-daa-practice-test.html): Free RAF and Royal Navy DAA practice: verbal, numerical, work rate, spatial, electrical and mechanical skills. Worked examples and 5 daily iPhone sessions.
-- [Free British Army ACT Practice App 2026](https://expectedvaluestudio.com/guides/army-cognitive-test-practice.html): Free British Army ACT practice: error detection, orientation, number fluency, word rules and deductive reasoning. Worked answers and 5 iPhone sessions daily.
+- [RAF & Royal Navy DAA Practice Test: Work Rate and Mechanics](https://expectedvaluestudio.com/guides/raf-daa-practice-test.html): Try a timed DAA work rate exercise and a worked lever question. See all six Defence Aptitude Assessment areas and the RAF and Royal Navy practice resources.
+- [British Army Cognitive Test Practice: ACT Verifier](https://expectedvaluestudio.com/guides/army-cognitive-test-practice.html): Prepare for the Army Cognitive Test (Verifier) at the soldier assessment centre. Try ACT number fluency and word rules, then use the official practice tool.
 - [Free RAF CBAT Practice App 2026 – Cranwell Skills](https://expectedvaluestudio.com/guides/raf-cbat-preparation.html): Free RAF CBAT skills practice on iPhone: tracking, multitasking, spatial reasoning, memory and maths. Cranwell route explained; 5 free sessions every day.
 <!-- uk-discovery end -->
 
@@ -139,6 +139,24 @@ The free allowance is five exercise sessions per day, with free choice across th
 <!-- question-discovery end -->
 
 - [Luchtverkeersleider worden? Oefen je verdeelde aandacht](https://expectedvaluestudio.com/guides/luchtverkeersleider-aandacht-oefenen.html): Twee oefeningen voor verdeelde aandacht met uitleg in het Nederlands.
+
+<!-- exam-format start -->
+## Exam practice guides
+
+Free questions and worked answers are available on these pages. Brain Preflight is available now on the App Store for iPhone.
+
+- [Free ASVAB Practice Questions and CAT-ASVAB Format](https://expectedvaluestudio.com/guides/asvab-practice-test.html): Try five original ASVAB questions with worked answers. Check CAT-ASVAB subtests, time limits, calculator rules and which scores count toward the AFQT.
+- [Border Patrol Entrance Exam: Logical Reasoning Practice](https://expectedvaluestudio.com/guides/border-patrol-entrance-exam-practice.html): Try three BPA logical reasoning questions. Use only the passage to decide what must be true and what cannot be concluded, then compare your answers.
+- [UK Civil Service Verbal and Numerical Test Practice](https://expectedvaluestudio.com/guides/civil-service-verbal-numerical-test-practice.html): Try a Civil Service verbal passage and numerical data questions. Learn when to choose Cannot say and find the official guidance on timing and calculators.
+- [Évaluation en ligne de la GRC : exercices corrigés](https://expectedvaluestudio.com/guides/evaluation-en-ligne-grc-pratique.html): Essayez des exercices de mémoire, de calcul et de raisonnement pour préparer l’évaluation en ligne de la GRC. Consultez les corrigés et le guide officiel.
+- [Öva på högskoleprovet: exempeluppgifter med lösningar](https://expectedvaluestudio.com/guides/hogskoleprovet-ova-gratis.html): Prova kvantitativa och verbala uppgifter inför högskoleprovet. Läs lösningarna och se hur provpassen är upplagda och vilka hjälpmedel som är tillåtna.
+- [Bundespolizei: Intelligenztest für den gehobenen Dienst](https://expectedvaluestudio.com/guides/bundespolizei-intelligenztest-ueben.html): Übe Wortanalogien, Zahlenreihen und räumliches Denken. Löse Beispielaufgaben und vergleiche den Testaufbau mit dem Infoblatt der Bundespolizei.
+- [Polizei-Aufnahmetest Österreich: Beispielaufgaben](https://expectedvaluestudio.com/guides/polizei-aufnahmetest-oesterreich-ueben.html): Löse Beispiele für die psychologische Eignungsdiagnostik der Polizei Österreich und vergleiche deine Antworten. Hier findest du auch die amtlichen Hinweise.
+- [Psicotécnicos Guardia Civil: preguntas y penalización](https://expectedvaluestudio.com/guides/psicotecnicos-guardia-civil-simulacro.html): Practica con preguntas resueltas para la prueba psicotécnica de la Guardia Civil. Consulta el tiempo, la nota mínima y la fórmula de penalización del BOE.
+- [Cognitietest politie oefenen: patronen en woordrelaties](https://expectedvaluestudio.com/guides/cognitietest-politie-oefenen.html): Oefen cijferpatronen, letterpatronen en woordrelaties voor de cognitietest van de politie. Bekijk de uitleg en lees de regels voor tijd en hulpmiddelen.
+
+Updated guides: Air Force Officer Qualifying Test (AFOQT); RCMP Online Entrance Assessment; Computerassistierter Test (CAT) der Bundeswehr; Australian Defence Force Job Opportunities Assessment (JOA).
+<!-- exam-format end -->
 
 ## Optional
 
