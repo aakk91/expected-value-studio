@@ -39,7 +39,7 @@ https://expectedvaluestudio.com/guides/tbas-practice-test.html
 https://expectedvaluestudio.com/guides/test-compass-fr.html
 https://expectedvaluestudio.com/guides/test-pilapt-fr.html
 https://expectedvaluestudio.com/guides/test-psychotechnique-gendarmerie.html
-https://expectedvaluestudio.com/brainpreflight/psy0/
+https://expectedvaluestudio.com/guides/test-psychotechnique-pilote.html
 https://expectedvaluestudio.com/guides/test-psychotechnique-sncf-ratp.html
 https://expectedvaluestudio.com/guides/tests-entree-enpq-police-quebec.html
 https://expectedvaluestudio.com/guides/us-military-aviation-aptitude-tests.html
