@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://expectedvaluestudio.com/labrats-legal/sitemap.xml

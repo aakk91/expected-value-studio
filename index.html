@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Expected Value Studio — iPhone apps</title>
+  <meta name="description" content="Explore Brain Preflight, LabRats and Nobody, three independent iPhone apps from Expected Value Studio.">
+  <link rel="canonical" href="https://expectedvaluestudio.com/">
+  <meta property="og:title" content="Expected Value Studio">
+  <meta property="og:description" content="Brain Preflight, LabRats and Nobody for iPhone.">
+  <meta property="og:url" content="https://expectedvaluestudio.com/">
+  <meta property="og:type" content="website">
+  <style>
+    @font-face{font-family:General;src:url('/labrats-legal/general-sans-400.woff2') format('woff2');font-display:swap}
+    @font-face{font-family:General;src:url('/labrats-legal/general-sans-600.woff2') format('woff2');font-weight:600;font-display:swap}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f8f7f4;color:#171816;font-family:General,system-ui,sans-serif}
+    main{width:min(1180px,92%);margin:0 auto;padding:clamp(40px,8vw,110px) 0 50px}
+    h1{font-size:clamp(2.5rem,7.5vw,6.8rem);line-height:1;letter-spacing:-.065em;font-weight:600;margin:0 0 .32em}
+    .intro{font-size:1.15rem;color:#54564e;margin:0 0 3rem}
+    .apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px)}
+    a{color:inherit;text-decoration:none;display:block;border-top:1px solid #98998e;padding-top:12px}
+    a:focus-visible{outline:3px solid #315ab8;outline-offset:5px}
+    .visual{height:clamp(230px,23vw,315px);overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding:22px 15px 0;background:#dde1fa}
+    .lab{background:#f3e1c8}.nobody{background:#efe89c}
+    .visual img{display:block;max-width:88%;width:auto;height:145%;object-fit:contain;object-position:top;border-radius:12px 12px 0 0}
+    h2{display:flex;align-items:baseline;justify-content:space-between;font-weight:600;font-size:clamp(1.5rem,2.5vw,2.1rem);letter-spacing:-.045em;margin:18px 0 6px}
+    h2 span{font-size:1.35rem}a:hover h2{text-decoration:underline;text-underline-offset:4px}
+    .apps p{line-height:1.5;color:#474b43;margin:0}
+    @media(max-width:700px){.apps{grid-template-columns:1fr;gap:32px}.visual{height:230px}.intro{margin-bottom:2rem}}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Expected Value Studio</h1>
+    <p class="intro">Independent apps for iPhone.</p>
+    <div class="apps">
+      <a href="/preflight/">
+        <div class="visual"><img src="/assets/iphone-181-en-today-light.png" alt=""></div>
+        <h2>Brain Preflight <span aria-hidden="true">↗</span></h2>
+        <p>Practice mental math, memory and spatial reasoning for pilot selection and other aptitude tests.</p>
+      </a>
+      <a href="/labrats-legal/">
+        <div class="visual lab"><img src="/labrats-legal/app-your-lab.jpg" alt=""></div>
+        <h2>LabRats <span aria-hidden="true">↗</span></h2>
+        <p>Keep a supplement journal and track your memory, focus and reaction time.</p>
+      </a>
+      <a href="/nobody/">
+        <div class="visual nobody"><img src="/nobody/img/01-post-the-moment.jpg" alt=""></div>
+        <h2>Nobody <span aria-hidden="true">↗</span></h2>
+        <p>Blur or cover faces in photos and videos before sharing, directly on your iPhone.</p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
