@@ -26,8 +26,9 @@ def generate():
             shutil.copy2(path, OUT / path.name)
 
     target = OUT / PRIVATE.lstrip("/")
-    guides_dir = target / "guides"
-    guides_dir.mkdir(parents=True)
+    target.mkdir()
+    guides_dir = OUT / "guides"
+    guides_dir.mkdir()
     aliases = {"index.html": ""}
     for path in sorted((ROOT / "guides").glob("*.html")):
         page = path.read_text().replace(STUDIO + GUIDES, PREFLIGHT + GUIDES)
@@ -66,15 +67,14 @@ def generate():
         if host != PREFLIGHT:
             rules.extend([f"{host}/guides {PREFLIGHT}{GUIDES} 301!",
                           f"{host}{GUIDES}* {PREFLIGHT}{GUIDES}:splat 301!"])
-    rules.extend([f"{PREFLIGHT}/guides {PRIVATE}/guides/index.html 200!",
-                  f"{PREFLIGHT}{GUIDES}* {PRIVATE}/guides/:splat 200!"])
-    # Keep site verification files available to crawlers on both hosts.
+    # Serve guides as real files, also available on the staging deployment.
+    # Only the old studio hostnames redirect these paths.
     for name in ["robots.txt", "sitemap.xml", "sitemap.txt"]:
         rules.append(f"{PREFLIGHT}/{name} {PRIVATE}/{name} 200!")
-    for name in ["BingSiteAuth.xml", "google27543428a22576c4.html", "e27d6c7a029334f1ea21ad6606d40bc9.txt"]:
-        if (OUT / name).is_file():
-            rules.append(f"{PREFLIGHT}/{name} /{name} 200!")
-    rules.append(f"{PREFLIGHT}/* {STUDIO}/preflight/:splat 301!")
+    rules.append(f"{PREFLIGHT}/ {STUDIO}/preflight/ 301!")
+    # Use file shadowing: existing guides and verification files win over
+    # the historical redirect for unmatched paths on the app subdomain.
+    rules.append(f"{PREFLIGHT}/* {STUDIO}/preflight/:splat 301")
     # Internal rewrite targets should never be indexed as standalone URLs.
     rules.append(f"{PRIVATE}/* {PREFLIGHT}/:splat 301!")
     (OUT / "_redirects").write_text("\n".join(rules) + "\n")
