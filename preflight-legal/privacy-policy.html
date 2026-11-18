@@ -74,8 +74,10 @@ donnée ne quitte l'appareil pour cela. Tu peux la désactiver dans les Réglage
 <p>Si tu choisis de parrainer un ami, l’app crée un code que tu peux partager. Quand ton ami le saisit,
 Supabase associe les identifiants aléatoires de vos deux installations et enregistre le moment où le
 code a été utilisé. Quand son app signale sa première partie terminée, la tienne reçoit cinq parties
-valables 24 heures. Le lien de parrainage est conservé après ces 24 heures pour limiter chaque
-installation à une invitation utilisée. Le partage passe par l’app que tu choisis sur ton téléphone.</p>
+valables 24 heures. Quand tu demandes ou saisis un code, Supabase vérifie le justificatif de téléchargement signé par Apple.
+La date du premier téléchargement permet de vérifier le délai de sept jours. Pour reconnaître une réinstallation,
+Supabase conserve une empreinte de l’identifiant attribué par Apple à ton compte pour cette app. Ce lien de parrainage
+est conservé après les 24 heures pour limiter chaque compte App Store à une seule invitation utilisée. Le partage passe par l’app que tu choisis sur ton téléphone.</p>
 <p>Si tu autorises les notifications iOS, ton app peut enregistrer auprès de Supabase un jeton fourni par
 Apple et la langue de l’app. Pour t’annoncer le gain, notre serveur envoie le jeton et le message à
 Apple Push Notification service (APNs). Il enregistre les tentatives et l’acceptation du message

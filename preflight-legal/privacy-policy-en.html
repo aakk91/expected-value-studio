@@ -70,8 +70,10 @@ the device for this. You can turn it off in iOS Settings.</p>
 <p>If you choose to invite a friend, the app creates a code you can share. When your friend enters it,
 Supabase links the random identifiers for your two app installations and records when the code was used.
 When their app reports that they finished their first game, you receive five free games valid for
-24 hours. The referral record is kept after those 24 hours so that each installation can redeem
-only one invitation. You choose which app on your phone to use to share the code.</p>
+24 hours. When you request or enter a code, Supabase verifies the download record signed by Apple. The date of
+your first download determines whether you are within the seven-day window. To recognize a reinstall, Supabase stores
+a hash of the identifier Apple assigns to your account for this app. The referral record is kept after those 24 hours
+so that each App Store account can redeem one invitation. You choose which app on your phone to use to share the code.</p>
 <p>If you allow iOS notifications, your app can register a device token from Apple and your app language
 with Supabase. To tell you about the reward, our server sends the token and message to Apple Push
 Notification service (APNs). It records delivery attempts and whether Apple accepted the message.
