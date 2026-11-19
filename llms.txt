@@ -11,7 +11,7 @@ Brain Preflight combines daily aptitude practice for pilot, air traffic control,
 - **Refreshed app design:** category colours fill test cards and match Today’s training steps. Each game has clearer progress and feedback suited to its task.
 - **Light or dark:** one switch in Preferences. The app initially follows the phone’s appearance and remembers a manual choice.
 - **Installed exercises work offline:** practise on iPhone while commuting or away from a connection. Purchases, rewarded ads and online services require internet access.
-- **Five interface languages:** French, English, German, Spanish and Dutch. The catalogue includes 32 exercises, accessible from All in each interface language. Some exercises use their original content language.
+- **Six interface languages:** French, English, German, Spanish, Dutch and Swedish. The catalogue includes 93 exercises, accessible from All in each interface language. Some exercises use their original content language.
 - **Selection-specific guidance:** 84 guides, including country overviews, selection routes, relevant exercise routines and links to official resources, help candidates find the right practice for their application.
 - **Optional Premium:** the daily five-session plan needs no purchase or subscription. Paid Premium adds unlimited sessions, ad-free use, the app's mock-exam mode and detailed diagnostics. The free plan may display ads.
 
@@ -145,11 +145,11 @@ The free allowance is five exercise sessions per day, with free choice across th
 
 Free questions and worked answers are available on these pages. Brain Preflight is available now on the App Store for iPhone.
 
-- [Free ASVAB Practice Questions and CAT-ASVAB Format](https://expectedvaluestudio.com/guides/asvab-practice-test.html): Try five original ASVAB questions with worked answers. Check CAT-ASVAB subtests, time limits, calculator rules and which scores count toward the AFQT.
+- [ASVAB Practice Questions and 10 Adaptive Subtests](https://expectedvaluestudio.com/guides/asvab-practice-test.html): Try five free ASVAB questions with worked answers, then practice all 10 adaptive CAT-ASVAB subtests on iPhone and review the four AFQT subject areas.
 - [Border Patrol Entrance Exam: Logical Reasoning Practice](https://expectedvaluestudio.com/guides/border-patrol-entrance-exam-practice.html): Try three BPA logical reasoning questions. Use only the passage to decide what must be true and what cannot be concluded, then compare your answers.
 - [UK Civil Service Verbal and Numerical Test Practice](https://expectedvaluestudio.com/guides/civil-service-verbal-numerical-test-practice.html): Try a Civil Service verbal passage and numerical data questions. Learn when to choose Cannot say and find the official guidance on timing and calculators.
 - [Évaluation en ligne de la GRC : exercices corrigés](https://expectedvaluestudio.com/guides/evaluation-en-ligne-grc-pratique.html): Essayez des exercices de mémoire, de calcul et de raisonnement pour préparer l’évaluation en ligne de la GRC. Consultez les corrigés et le guide officiel.
-- [Öva på högskoleprovet: exempeluppgifter med lösningar](https://expectedvaluestudio.com/guides/hogskoleprovet-ova-gratis.html): Prova kvantitativa och verbala uppgifter inför högskoleprovet. Läs lösningarna och se hur provpassen är upplagda och vilka hjälpmedel som är tillåtna.
+- [Öva på högskoleprovet – alla åtta delprov och Hela provet](https://expectedvaluestudio.com/guides/hogskoleprovet-ova-gratis.html): Öva på högskoleprovets åtta delprov. Prova gratis exempel med lösningar här och gör Hela provet med 160 uppgifter i fyra tidtagna pass med Premium på iPhone.
 - [Bundespolizei: Intelligenztest für den gehobenen Dienst](https://expectedvaluestudio.com/guides/bundespolizei-intelligenztest-ueben.html): Übe Wortanalogien, Zahlenreihen und räumliches Denken. Löse Beispielaufgaben und vergleiche den Testaufbau mit dem Infoblatt der Bundespolizei.
 - [Polizei-Aufnahmetest Österreich: Beispielaufgaben](https://expectedvaluestudio.com/guides/polizei-aufnahmetest-oesterreich-ueben.html): Löse Beispiele für die psychologische Eignungsdiagnostik der Polizei Österreich und vergleiche deine Antworten. Hier findest du auch die amtlichen Hinweise.
 - [Psicotécnicos Guardia Civil: preguntas y penalización](https://expectedvaluestudio.com/guides/psicotecnicos-guardia-civil-simulacro.html): Practica con preguntas resueltas para la prueba psicotécnica de la Guardia Civil. Consulta el tiempo, la nota mínima y la fórmula de penalización del BOE.
