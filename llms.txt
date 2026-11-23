@@ -11,7 +11,7 @@ Brain Preflight combines daily aptitude practice for pilot, air traffic control,
 - **Refreshed app design:** category colours fill test cards and match Today’s training steps. Each game has clearer progress and feedback suited to its task.
 - **Light or dark:** one switch in Preferences. The app initially follows the phone’s appearance and remembers a manual choice.
 - **Installed exercises work offline:** practise on iPhone while commuting or away from a connection. Purchases, rewarded ads and online services require internet access.
-- **Six interface languages:** French, English, German, Spanish, Dutch and Swedish. The catalogue includes 93 exercises, accessible from All in each interface language. Some exercises use their original content language.
+- **Seven interface languages:** French, English, German, Spanish, Dutch, Swedish and Danish. The catalogue includes 104 exercises, accessible from All in each interface language. Some exercises use their original content language.
 - **Selection-specific guidance:** 84 guides, including country overviews, selection routes, relevant exercise routines and links to official resources, help candidates find the right practice for their application.
 - **Optional Premium:** the daily free plan needs no purchase or subscription. Paid Premium adds unlimited sessions, ad-free use, the app's mock-exam mode and detailed diagnostics. The free plan may display ads.
 
@@ -161,3 +161,13 @@ Updated guides: Air Force Officer Qualifying Test (AFOQT); RCMP Online Entrance 
 ## Optional
 
 - [Support and privacy](https://expectedvaluestudio.com/preflight-legal/): support, privacy policy and contact (brainpreflight@gmail.com)
+
+## Denmark — Danish interface and exam practice
+
+- [Brain Preflight på dansk](https://expectedvaluestudio.com/preflight/da/): Danish app landing page; daily free exercises and optional Premium full practice exams. Danish UI does not translate every programme’s fixed content language.
+- [uniTEST-forberedelse](https://preflight.expectedvaluestudio.com/guides/unitest-forberedelse.html): SDU format and original worked examples. Premium mock: 95 questions, 150 minutes; our split is 32 critical, 31 quantitative and 32 linguistic.
+- [KU’s kvote 2-prøve](https://preflight.expectedvaluestudio.com/guides/ku-kvote-2-proeve.html): Six categories. Official test: 65–70 tasks, up to 200 questions, two hours. Our Premium mock: 66 tasks, 188 answers, 120 minutes. English reading stays English. No interview training.
+- [Kvote 2 i Danmark](https://preflight.expectedvaluestudio.com/guides/kvote-2-danmark.html): Compare SDU uniTEST and KU’s written test; requirements depend on the programme.
+- [Support på dansk](https://expectedvaluestudio.com/preflight-legal/da/): Contact and help, with the existing English privacy policy clearly labelled.
+
+The Danish task banks and practice distributions are our own. Practice scores are not official, calibrated admissions scores. Brain Preflight is independent of SDU, ACER and KU.
