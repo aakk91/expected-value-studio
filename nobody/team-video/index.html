@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How to keep one player visible in a team video on iPhone | Nobody</title>
+  <meta name="description" content="Keep the scorer visible and cover other faces in a team video. See how the Nobody iPhone editor handles face selection and export.">
+  <link rel="canonical" href="https://expectedvaluestudio.com/nobody/team-video/">
+  <link rel="icon" href="../img/icon-180.png">
+  <style>
+    :root { color-scheme: light dark; --ink: #0a0a0a; --paper: #fff; --muted: #55565a; --line: #d7d7d4; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #f5f5f7; --paper: #101011; --muted: #b2b2b7; --line: #404042; } }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; max-width: 1080px; padding: 0 clamp(20px,5vw,68px) 56px; color: var(--ink); background: var(--paper); font: 17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color: inherit; text-underline-offset: .17em; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; border-bottom: 1px solid var(--line); }
+    header a:first-child { font-size: 26px; font-weight: 900; letter-spacing: -.06em; text-decoration: none; }
+    main { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(180px,.75fr); align-items: start; gap: clamp(24px,5vw,64px); padding-top: clamp(30px,6vw,72px); }
+    h1 { font-size: clamp(43px,6vw,76px); letter-spacing: -.06em; line-height: 1; margin: 0 0 24px; }
+    h2 { font-size: 25px; line-height: 1.2; letter-spacing: -.035em; margin-top: 36px; }
+    ol { padding-inline-start: 1.4em; } li { padding: 3px 0 8px 4px; }
+    .lead { font-size: 21px; } figure { margin: 0; } img { width: 100%; height: auto; border-radius: 18px; }
+    video { display:block; width:100%; height:auto; border-radius:18px; background:#111; }
+    figcaption, .status { font-size: 14px; color: var(--muted); margin-top: 8px; }
+    .action { background: #ffe11a; color: #111; padding: 12px 19px; display: inline-block; border-radius: 28px; font-weight: 700; text-decoration: none; }
+    @media (max-width: 650px) { main { grid-template-columns: 1fr; } figure { max-width: 320px; margin-inline: auto; } }
+  </style>
+</head>
+<body>
+  <header><a href="../">Nobody</a><a href="../privacy/">Privacy</a></header>
+  <main>
+    <article>
+      <h1>Keep the scorer in the shot.</h1>
+      <p class="lead" id="lead">Keep one player visible and cover the other faces before sharing a team video from your iPhone.</p>
+      <h2>How to cover everyone except one player</h2>
+      <ol>
+        <li>Choose the video. Nobody scans it on your iPhone and covers the faces it detects.</li>
+        <li>Tap the scorer’s face chip to keep that person visible. Leave the other players covered.</li>
+        <li>Replay the whole clip, including people entering at the edges. Add a manual box over anything the scan missed, then save the covered copy to Photos.</li>
+      </ol>
+      <a class="action" id="contact" href="mailto:appblurvideo@gmail.com?subject=Nobody%20team%20video%20early%20access">Ask about early access</a>
+      <p class="status">Nobody is coming to the App Store. The link opens an email to the developer.</p>
+    </article>
+    <figure><video id="demo" controls playsinline muted preload="metadata" width="720" height="1280" src="parents.mp4" aria-label="Illustrated demo showing one football player visible and the other faces covered"></video><figcaption>12-second illustrated demo. <a href="../img/04-keep-you.jpg">See the face selector in the iPhone app.</a></figcaption></figure>
+  </main>
+  <script>
+    const campaigns = {
+      parents: ["Share your kid’s goal with the family while keeping teammates and bystanders covered.", "parent"],
+      coaches: ["Show the player making the run while keeping other faces covered in a coaching clip.", "coach"],
+      teams: ["Post the scorer’s highlight on your team account with the other faces covered.", "team social"]
+    };
+    const audience = new URLSearchParams(location.search).get("audience");
+    if (Object.hasOwn(campaigns, audience)) {
+      const [message, label] = campaigns[audience];
+      document.getElementById("lead").textContent = message;
+      const filename = {parents: "parents.mp4", coaches: "coaches.mp4", teams: "team-social.mp4"}[audience];
+      document.getElementById("demo").src = filename;
+      document.getElementById("contact").href = "mailto:appblurvideo@gmail.com?subject=" +
+        encodeURIComponent("Nobody early access — " + label);
+    }
+  </script>
+</body>
+</html>

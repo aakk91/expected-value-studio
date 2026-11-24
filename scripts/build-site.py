@@ -29,6 +29,7 @@ def generate():
     target.mkdir()
     guides_dir = OUT / "guides"
     guides_dir.mkdir()
+    shutil.copytree(ROOT / "guides/atsa-practice", guides_dir / "atsa-practice")
     aliases = {"index.html": ""}
     for path in sorted((ROOT / "guides").glob("*.html")):
         page = path.read_text().replace(STUDIO + GUIDES, PREFLIGHT + GUIDES)

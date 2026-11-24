@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#efece3"><meta name="description" content="Try the free LabRats seven-morning reaction time challenge. Tap ten lights each morning and track your daily median on one device.">
+<title>Seven mornings · LabRats reaction time challenge</title>
+<link rel="canonical" href="https://expectedvaluestudio.com/labrats-legal/seven-mornings/"><link rel="icon" href="../icon.png"><link rel="stylesheet" href="challenge.css"><script src="challenge.js" defer></script>
+</head>
+<body>
+<header><a class="mark" href="https://expectedvaluestudio.com/labrats-legal/"><img src="../icon.png" width="36" height="36" alt="">LabRats.</a><a href="#week">Your week</a></header>
+<main>
+<section class="intro"><h1>Seven mornings.</h1><p>How consistent is your reaction time? Tap ten lights each morning for a week. Compare your daily times on the same device.</p></section>
+<section class="panel" aria-labelledby="session">
+<div class="panelhead"><h2 id="session">Morning 1</h2><span id="count">10 lights · about 40 seconds</span></div>
+<button id="target" class="stage" type="button" disabled aria-label="Reaction pad"><span id="lamp" aria-hidden="true">•</span><span id="cue">Tap when the light turns green</span></button>
+<p id="status" role="status">Use the same hand and the same device each morning.</p>
+<button id="start" class="primary" type="button">Start morning 1</button>
+</section>
+<section id="week" class="panel" aria-labelledby="weekTitle">
+<div class="panelhead"><h2 id="weekTitle">Your week</h2><span id="progress">0 / 7 mornings</span></div>
+<canvas id="chart" width="860" height="280" aria-label="Daily median response times, also shown in the list below" role="img"></canvas>
+<p id="summary">Your first run starts your chart.</p><ol id="history"></ol>
+<div class="actions"><button id="share" hidden>Share challenge</button><button id="card" hidden>Save result card</button></div>
+<p id="shareStatus" role="status"></p>
+</section>
+<footer>One result per local calendar day. If you miss a morning, pick up where you left off. Your results stay in this browser. <a href="https://expectedvaluestudio.com/labrats-legal/reaction-time-test.html">How LabRats measures reaction time</a></footer>
+<noscript>This challenge needs JavaScript to time your taps.</noscript>
+</main></body></html>
