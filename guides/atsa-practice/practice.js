@@ -3,7 +3,9 @@
 const $ = id => document.getElementById(id);
 const skillNames = ['Spatial reasoning', 'Working memory', 'Divided attention'];
 const directions = ['North', 'East', 'South', 'West'];
-const sessionURL = 'https://preflight.expectedvaluestudio.com/guides/atsa-practice/';
+const sessionURL = location.protocol === 'https:' && location.hostname.endsWith('.netlify.app')
+  ? new URL('./', location.href).href
+  : 'https://preflight.expectedvaluestudio.com/guides/atsa-practice/';
 const limit = 20000;
 const duration = limit / 1000;
 const querySeed = new URL(location.href).searchParams.get('challenge');

@@ -41,7 +41,7 @@
       <a class="action" id="contact" href="mailto:appblurvideo@gmail.com?subject=Nobody%20team%20video%20early%20access">Ask about early access</a>
       <p class="status">Nobody is coming to the App Store. The link opens an email to the developer.</p>
     </article>
-    <figure><video id="demo" controls playsinline muted preload="metadata" width="720" height="1280" src="parents.mp4" aria-label="Illustrated demo showing one football player visible and the other faces covered"></video><figcaption>12-second illustrated demo. <a href="../img/04-keep-you.jpg">See the face selector in the iPhone app.</a></figcaption></figure>
+    <figure><video id="demo" controls playsinline muted preload="metadata" width="720" height="1280" src="parents.mp4" poster="parents.jpg" aria-label="Illustrated demo showing one football player visible and the other faces covered"></video><figcaption>12-second illustrated demo. <a href="../img/04-keep-you.jpg">See the face selector in the iPhone app.</a></figcaption></figure>
   </main>
   <script>
     const campaigns = {
@@ -54,7 +54,9 @@
       const [message, label] = campaigns[audience];
       document.getElementById("lead").textContent = message;
       const filename = {parents: "parents.mp4", coaches: "coaches.mp4", teams: "team-social.mp4"}[audience];
-      document.getElementById("demo").src = filename;
+      const demo = document.getElementById("demo");
+      demo.poster = filename.replace(".mp4", ".jpg");
+      demo.src = filename;
       document.getElementById("contact").href = "mailto:appblurvideo@gmail.com?subject=" +
         encodeURIComponent("Nobody early access — " + label);
     }
