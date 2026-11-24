@@ -181,7 +181,6 @@ function finish() {
   $('focus').textContent = total === 9 ? 'Keep your practice going.' : 'Practise ' + skillNames[focus].toLowerCase() + ' next.';
   $('next-copy').textContent = total === 9 ? 'Choose the ATSA programme in Brain Preflight to continue with a new exercise.' :
     ['Try a mental rotation exercise in the ATSA programme.','Try a working-memory exercise in the ATSA programme.','Try a divided-attention exercise in the ATSA programme.'][focus];
-  $('install').href = 'https://apps.apple.com/us/app/apple-store/id6794363864?pt=129217861&ct=atsa-web-challenge&mt=8';
   $('review').replaceChildren(...review);
   $('share-status').textContent = '';
   $('manual-link').hidden = true;
