@@ -11,7 +11,7 @@ Brain Preflight combines daily aptitude practice for pilot, air traffic control,
 - **Refreshed app design:** category colours fill test cards and match Today’s training steps. Each game has clearer progress and feedback suited to its task.
 - **Light or dark:** one switch in Preferences. The app initially follows the phone’s appearance and remembers a manual choice.
 - **Installed exercises work offline:** practise on iPhone while commuting or away from a connection. Purchases, rewarded ads and online services require internet access.
-- **Seven interface languages:** French, English, German, Spanish, Dutch, Swedish and Danish. The catalogue includes 104 exercises, accessible from All in each interface language. Some exercises use their original content language.
+- **Seven interface languages:** French, English, German, Spanish, Dutch, Swedish and Danish. The catalogue includes 111 exercises, accessible from All in each interface language. Some exercises use their original content language.
 - **Selection-specific guidance:** 84 guides, including country overviews, selection routes, relevant exercise routines and links to official resources, help candidates find the right practice for their application.
 - **Optional Premium:** the daily free plan needs no purchase or subscription. Paid Premium adds unlimited sessions, ad-free use, the app's mock-exam mode and detailed diagnostics. The free plan may display ads.
 
