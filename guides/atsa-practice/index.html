@@ -4,10 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Free ATSA practice session · Brain Preflight</title>
-<meta name="description" content="Try nine original spatial reasoning, working memory and divided attention questions. Review your answers and challenge a friend to the same round.">
+<meta name="description" content="Try nine original spatial reasoning, working memory and divided attention questions, plus a keyboard radar sample. Review your answers and challenge a friend to the same round.">
 <link rel="canonical" href="https://preflight.expectedvaluestudio.com/guides/atsa-practice/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free ATSA practice session · Brain Preflight">
+<meta property="og:description" content="Try nine original spatial reasoning, working memory and divided attention questions, plus a keyboard radar sample. Review your answers and challenge a friend to the same round.">
+<meta property="og:url" content="https://preflight.expectedvaluestudio.com/guides/atsa-practice/">
+<meta property="og:image" content="https://expectedvaluestudio.com/assets/social-preview-en.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Brain Preflight — Aptitude test practice. Train every day for free.">
+<meta name="twitter:image:alt" content="Brain Preflight — Aptitude test practice. Train every day for free.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free ATSA practice session · Brain Preflight">
+<meta name="twitter:description" content="Try nine original spatial reasoning, working memory and divided attention questions, plus a keyboard radar sample. Review your answers and challenge a friend to the same round.">
+<meta name="twitter:image" content="https://expectedvaluestudio.com/assets/social-preview-en.png">
 <link rel="stylesheet" href="./practice.css">
 <script defer src="./practice.js"></script>
+<script defer src="./radar-engine.js"></script>
+<script defer src="./radar-sample.js"></script>
 </head>
 <body>
 <header><div class="bar"><a href="https://preflight.expectedvaluestudio.com/">Brain<span>Preflight</span></a><a class="guide" href="https://apps.apple.com/app/apple-store/id6794363864?pt=129217861&amp;ct=atsa-web-challenge&amp;mt=8">Get Brain Preflight for iPhone ↗</a></div></header>
@@ -16,9 +32,12 @@
 <div class="hero"><div><p class="overline">AIR TRAFFIC SKILLS ASSESSMENT</p><h1>ATSA practice<br>in three minutes.</h1><p class="lead">Read a heading, hold a code in memory, and monitor two signals at once. Try nine original questions and see exactly where you slipped.</p><button class="primary" id="start">Start practice <span aria-hidden="true">→</span></button></div>
 <div class="radar" aria-hidden="true"><i class="north">N</i><i class="east">E</i><i class="south">S</i><i class="west">W</i><b class="blip b1">A7</b><b class="blip b2">K2</b><b class="blip b3">M4</b><span class="sweep"></span></div></div>
 <div class="overview"><h2>Before you start</h2><p>Each question allows 20 seconds. Memory and monitoring questions briefly show information before you answer. Unanswered questions count as missed. Your review stays on this device until you leave.</p><small>Independent skill practice. Scores describe this session only. The exercises are original and unaffiliated with the FAA.</small></div>
+<div class="overview rd-intro"><p class="overline">KEYBOARD RADAR SAMPLE · ABOUT 2 MINUTES</p><h2>Keep moving targets apart</h2><p>Four waves of numbered targets fly straight across the scope. Press a target’s number to remove it before two of them collide, press <kbd>Space</kbd> when no conflict remains, and in the last two waves answer sums with <kbd>A</kbd>–<kbd>D</kbd> while traffic keeps moving. Mouse clicks work too.</p><p>This is the same scenario and scoring engine as the radar section of the ATSA programme in the iPhone app.</p><div class="actions"><button class="primary" id="radar-start">Start the radar sample <span aria-hidden="true">→</span></button><a href="https://apps.apple.com/app/apple-store/id6794363864?pt=129217861&amp;ct=atsa-web-challenge&amp;mt=8">Full ATSA practice on iPhone ↗</a></div></div>
 </section>
 <section id="round" hidden><div class="roundhead"><span id="progress"></span><span id="clock"></span></div><div id="meter"><i></i></div><div class="card"><div class="overline" id="skill"></div><h2 id="prompt" tabindex="-1"></h2><div id="stage"></div><p id="cue" role="status"></p><div id="choices"></div></div></section>
 <section id="result" hidden><p class="overline">SESSION REVIEW</p><h1 id="score" tabindex="-1"></h1><div id="summary"></div><div class="card next"><h2 id="focus"></h2><p id="next-copy"></p><a class="primary" id="install" href="https://apps.apple.com/app/apple-store/id6794363864?pt=129217861&amp;ct=atsa-web-challenge&amp;mt=8">Get Brain Preflight for iPhone ↗</a></div><div class="actions"><button id="share">Share this challenge</button><button id="retry">Try a fresh round</button></div><p id="share-status" role="status"></p><input id="manual-link" aria-label="Challenge link" readonly hidden><p><a href="https://preflight.expectedvaluestudio.com/guides/atsa-test-preparation.html">Read the ATSA guide</a></p><h2>Your answers</h2><div id="review"></div></section>
+<section id="radar" hidden><div class="roundhead"><span id="rd-wave"></span><span class="rd-keys">1–9 remove · Space clear · A–D math</span></div><div class="rd-body"><div class="rd-scope" id="rd-field" tabindex="-1" aria-label="Radar scope"><svg viewBox="0 0 100 100"><rect width="100" height="100" rx="5" fill="#14174a"/><g stroke="#8e93f0" stroke-opacity=".2" fill="none"><circle cx="50" cy="50" r="16"/><circle cx="50" cy="50" r="32"/><circle cx="50" cy="50" r="48"/><path d="M50 0V100M0 50H100"/></g><g id="rd-tg"></g><g id="rd-fx"></g></svg></div><div class="rd-side"><p id="rd-msg" role="status"></p><div id="rd-math" class="rd-math" hidden><div id="rd-q">&nbsp;</div><div id="rd-opts"></div></div><div id="rd-ids"></div><button id="rd-clear" class="rd-clear">Clear <kbd>Space</kbd></button></div></div></section>
+<section id="radar-result" hidden><p class="overline">RADAR SAMPLE REVIEW</p><h1 id="rd-score" tabindex="-1"></h1><div id="rd-summary" class="rd-summary"></div><div class="card next"><h2>Train every section on iPhone</h2><p>The ATSA programme in Brain Preflight has the full radar section with twelve waves, plus number differences, variable memory, relative position, deduction and reading, and a timed practice exam.</p><a class="primary" href="https://apps.apple.com/app/apple-store/id6794363864?pt=129217861&amp;ct=atsa-web-challenge&amp;mt=8">Get Brain Preflight for iPhone ↗</a></div><div class="actions"><button id="rd-retry">Try a fresh radar round</button><button id="rd-back">Back to the practice page</button></div><h2>Your waves</h2><div id="rd-review"></div></section>
 <noscript>Enable JavaScript to start this timed practice session.</noscript>
 </main>
 </body></html>
