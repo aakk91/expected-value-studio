@@ -64,7 +64,7 @@ def add_practice_links(page, slug):
     edits = []
     for i, (anchor, _, store) in enumerate(primary):
         # Keep the original campaign and storefront, even when the article has more than one CTA.
-        link = f'<a href="{escape(store, quote=True)}">{download}</a>'
+        link = f'<a class="bp-download" href="{escape(store, quote=True)}">{download}</a>'
         if i == 0:
             links = []
             for label, value in options.items():
@@ -75,13 +75,21 @@ def add_practice_links(page, slug):
                     deep = f'<span class="bp-practice-option">{deep}<a href="{escape(install, quote=True)}" aria-label="Download Brain Preflight for {exam}">App Store</a></span>'
                 links.append(deep)
             content = (f'<span class="bp-practice" id="exam-practice" role="group" aria-label="{heading}">'
-                       f'<strong>{heading}</strong><span class="bp-practice-links">{" ".join(links)}</span>'
-                       f'<small>{link}. {instruction}</small></span>')
+                       f'{link}<small>{instruction}</small><strong>{heading}</strong>'
+                       f'<span class="bp-practice-links">{" ".join(links)}</span></span>')
         else:
             target = SCHEME + paths[0] if len(paths) == 1 else "#exam-practice"
-            content = (f'<span class="bp-practice-repeat"><a href="{escape(target, quote=True)}">{reopen}</a>'
-                       f'<span aria-hidden="true"> · </span>{link}</span>')
+            content = (f'<span class="bp-practice-repeat">{link}'
+                       f'<a href="{escape(target, quote=True)}">{reopen}</a></span>')
         edits.append((anchor.start(), anchor.end(), content))
+    # Long-form articles sometimes put the original CTA below several sections.
+    intro = body[:primary[0][0].start()]
+    if re.search(r"<h2\b", intro, re.I):
+        title = re.search(r"</h1>", intro, re.I)
+        if title:
+            store = escape(primary[0][2], quote=True)
+            early = f'<p class="bp-intro"><a class="bp-download" href="{store}">{download}</a></p>'
+            edits.insert(0, (title.end(), title.end(), early))
     for start, end, replacement in reversed(edits):
         body = body[:start] + replacement + body[end:]
     return head + body

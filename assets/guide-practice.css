@@ -10,12 +10,17 @@
 .bp-practice strong, .bp-practice small { display: block; }
 .bp-practice-links { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0; }
 .bp-practice a, .bp-practice-repeat a { color: #4032a0; text-decoration: underline; }
-.bp-practice .bp-practice-link {
-  display: inline-flex; align-items: center; min-height: 44px; padding: .35rem .8rem;
-  box-sizing: border-box; border-radius: .45rem; background: #38307a; color: white;
-  line-height: 1.25; text-decoration: none; font-weight: 600;
+a.bp-download {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+  box-sizing: border-box; padding: .7rem 1.25rem; border-radius: .7rem;
+  background: #ff8a2b; color: #22123a; font: 700 1.0625rem/1.35 system-ui, sans-serif;
+  text-align: center; text-decoration: none;
 }
+.bp-intro { margin: .85rem 0; }
+.bp-practice .bp-practice-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .4rem; }
+.bp-practice .bp-download, .bp-practice-repeat .bp-download { color: #22123a; text-decoration: none; }
+.bp-practice small { margin: .5rem 0 1rem; }
 .bp-practice-option { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-right: .6rem; }
 .bp-practice small { font-size: .875rem; line-height: 1.5; }
-.bp-practice-repeat { display: block; margin: 1rem 0; line-height: 1.6; }
-.bp-practice a:focus-visible, .bp-practice-repeat a:focus-visible { outline: 3px solid #a34a00; outline-offset: 2px; }
+.bp-practice-repeat { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; line-height: 1.6; }
+.bp-download:focus-visible, .bp-practice a:focus-visible, .bp-practice-repeat a:focus-visible { outline: 3px solid #a34a00; outline-offset: 2px; }

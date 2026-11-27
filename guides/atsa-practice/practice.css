@@ -17,3 +17,5 @@ kbd{font:600 12px/1 ui-monospace,monospace;border:1px solid var(--line);border-b
 @media(max-width:760px){.rd-body{grid-template-columns:1fr}.rd-summary{grid-template-columns:repeat(2,1fr)}.rd-keys{display:none}}
 
 .install-note{display:block;margin-top:.65rem;font-size:.9rem;line-height:1.5}.install-note a{color:var(--purple);text-decoration:underline}
+
+.bar .guide{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border-radius:10px;background:var(--amber);color:var(--navy);font-size:16px;line-height:1.25;text-align:center}.bar{gap:12px}

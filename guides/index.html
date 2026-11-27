@@ -14,15 +14,32 @@ body{font-family:'General Sans',system-ui,-apple-system,sans-serif;background:va
 header{background:var(--brand);padding:14px 20px}
 header a{color:#fff;text-decoration:none;font-family:'Cabinet Grotesk',sans-serif;font-weight:800;font-size:18px}
 header a span{color:var(--amber)}
-main{max-width:720px;margin:0 auto;padding:32px 20px 64px}
-h1{font-family:'Cabinet Grotesk',sans-serif;font-weight:800;font-size:30px;line-height:1.15;color:var(--ink);margin-bottom:12px}
-.lead{font-size:17px;margin-bottom:26px}
-h2{font-family:'Cabinet Grotesk',sans-serif;font-weight:700;font-size:19px;color:var(--ink);margin:26px 0 10px}
-a.g{display:block;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:18px 20px;margin-bottom:12px;text-decoration:none}
-a.g strong{display:block;font-family:'Cabinet Grotesk',sans-serif;font-weight:700;font-size:17px;color:var(--brand);margin-bottom:4px}
-a.g span{color:var(--body);font-size:14.5px}
-a.g em{color:var(--muted);font-style:normal;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em}
-.cta{display:block;background:linear-gradient(180deg,#FF9A45,var(--amber));color:#22123A;text-align:center;font-weight:600;font-size:17px;text-decoration:none;border-radius:14px;padding:16px 24px;margin:28px 0;box-shadow:0 4px 14px rgba(255,138,43,.35)}
+main{max-width:960px;margin:0 auto;padding:32px 20px 64px}
+h1,h2,h3,a.g strong{font-family:'Cabinet Grotesk',system-ui,sans-serif;color:var(--ink);line-height:1.2}
+h1{font-size:clamp(28px,5vw,40px);margin-bottom:8px}
+.lead{font-size:17px}
+main a{color:var(--brand)}
+main a:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.countries{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,9rem),1fr));gap:8px;margin:20px 0 10px}
+.countries a{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);font-weight:600;line-height:1.25;text-decoration:none}
+.flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:1.25em;line-height:1;flex:none}
+.country{margin-top:32px}
+h2{display:flex;align-items:center;gap:10px;font-size:26px;margin-bottom:12px;scroll-margin-top:12px}
+h3{font-size:17px;margin:18px 0 8px}
+.guide-list{border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+a.g{display:block;padding:12px 16px;text-decoration:none;border-radius:inherit}
+a.g+a.g{border-top:1px solid var(--border);border-top-left-radius:0;border-top-right-radius:0}
+a.g:not(:last-child){border-bottom-left-radius:0;border-bottom-right-radius:0}
+a.g strong{display:block;font-weight:700;font-size:18px;color:var(--brand);margin-bottom:3px}
+a.g span{color:var(--body);font-size:15px}
+a.g em{font-style:normal;font-size:13px;color:#535976}
+a.g:hover strong,.countries a:hover{text-decoration:underline}
+.back{display:inline-block;padding:10px 0;font-size:14px}
+.cta{display:block;background:var(--amber);color:#22123A;text-align:center;font-weight:600;font-size:17px;text-decoration:none;border-radius:14px;padding:16px 24px;margin:28px 0}
+[hidden]{display:none!important}
+.intro-download{display:inline-flex;align-items:center;min-height:48px;margin:14px 0;padding:10px 20px}
+.language-filter{display:flex;align-items:center;gap:10px;margin:6px 0;font-weight:600}
+.language-filter select{min-height:44px;max-width:100%;padding:6px 10px;border:1px solid #9298ac;border-radius:8px;color:var(--ink);background:white;font:inherit}
 footer{border-top:1px solid var(--border);max-width:720px;margin:0 auto;padding:24px 20px 48px;font-size:14px;color:var(--muted)}
 footer a{color:var(--brand)}
 </style>
@@ -44,118 +61,275 @@ footer a{color:var(--brand)}
 <body>
 <header><a href="/preflight/">Brain <span>Preflight</span></a></header>
 <main>
-<h1>Free aptitude test practice app and exam guides (2026)</h1><p>Choose your exam guide to open its practice in the iPhone app.</p><nav data-internal-links="countries" aria-label="Guides by country"><p><strong>Guides by country:</strong> <a href="/guides/tests-psychotechniques-france.html">Tests psychotechniques en France (French)</a> · <a href="/guides/aptitude-tests-usa.html">United States — military, police, ATSA and dispatch</a> · <a href="/guides/eignungstest-deutschland-kostenlos-ueben.html">Eignungstests in Deutschland (German)</a> · <a href="/guides/aptitude-tests-canada.html">Canada — armed forces, RCMP and Québec police</a> · <a href="/guides/aptitude-tests-australia.html">Australia — ADF and Airservices</a></p><p><a href="/preflight/#selection-guides">Explore selections by topic on the homepage</a></p></nav>
-<p class="lead" data-free-positioning="en"><strong>Free aptitude test practice app for 2026 pilot, ATC, police and military selection: Brain Preflight gives you free practice every day.</strong> Find a practice plan for your pilot, police, military, air traffic control or 911 dispatcher assessment. Brain Preflight offers free iPhone practice every day, with any exercise of your choice. Guides combine official resources, worked examples and links to app practice.</p>
+<h1 id="countries">Exam guides by country</h1>
+<p class="lead" data-free-positioning="en">Choose your country to find exam guides, worked examples and free daily iPhone practice.</p>
+<a class="cta intro-download" href="https://apps.apple.com/app/apple-store/id6794363864?pt=129217861&amp;ct=hub-guide&amp;mt=8">Download Brain Preflight on the App Store</a>
+<div class="language-filter" hidden>
+  <label for="guide-language">Guide language</label>
+  <select id="guide-language">
+    <option value="">All languages</option>
+    <option value="da" lang="da">Dansk</option>
+    <option value="de" lang="de">Deutsch</option>
+    <option value="en" lang="en">English</option>
+    <option value="es" lang="es">Español</option>
+    <option value="fr" lang="fr">Français</option>
+    <option value="nl" lang="nl">Nederlands</option>
+    <option value="sv" lang="sv">Svenska</option>
+  </select>
+</div>
+<nav class="countries" data-internal-links="countries" aria-label="Jump to country">
+  <a href="#australia"><span class="flag" aria-hidden="true">🇦🇺</span> Australia</a>
+  <a href="#austria"><span class="flag" aria-hidden="true">🇦🇹</span> Austria</a>
+  <a href="#canada"><span class="flag" aria-hidden="true">🇨🇦</span> Canada</a>
+  <a href="#danske-guider"><span class="flag" aria-hidden="true">🇩🇰</span> Denmark</a>
+  <a href="#france"><span class="flag" aria-hidden="true">🇫🇷</span> France</a>
+  <a href="#germany"><span class="flag" aria-hidden="true">🇩🇪</span> Germany</a>
+  <a href="#india"><span class="flag" aria-hidden="true">🇮🇳</span> India</a>
+  <a href="#netherlands"><span class="flag" aria-hidden="true">🇳🇱</span> Netherlands</a>
+  <a href="#singapore"><span class="flag" aria-hidden="true">🇸🇬</span> Singapore</a>
+  <a href="#spain"><span class="flag" aria-hidden="true">🇪🇸</span> Spain</a>
+  <a href="#sweden"><span class="flag" aria-hidden="true">🇸🇪</span> Sweden</a>
+  <a href="#switzerland"><span class="flag" aria-hidden="true">🇨🇭</span> Switzerland</a>
+  <a href="#united-kingdom"><span class="flag" aria-hidden="true">🇬🇧</span> United Kingdom</a>
+  <a href="#united-states"><span class="flag" aria-hidden="true">🇺🇸</span> United States</a>
+  <a href="#international"><span class="flag" aria-hidden="true">🌐</span> International</a>
+</nav>
+<p><a href="/preflight/#selection-guides">Browse by selection instead</a></p>
 
-<!-- switzerland-hub-nav start --><nav data-internal-links="switzerland" aria-label="Switzerland preparation guides"><p><strong>Switzerland:</strong> <a href="/guides/aptitude-tests-switzerland.html">English</a> · <a href="/guides/tests-aptitude-suisse.html">Français</a> · <a href="/guides/eignungstest-schweiz-kostenlos-ueben.html">Deutsch</a></p></nav><!-- switzerland-hub-nav end --><!-- uk-hub-nav start --><nav aria-label="UK selection routes"><p><strong>United Kingdom:</strong> <a href="/guides/aptitude-tests-uk.html">UK aptitude tests: choose your route</a> · <a href="/guides/raf-daa-practice-test.html">RAF / Royal Navy DAA practice</a> · <a href="/guides/army-cognitive-test-practice.html">British Army ACT practice</a> · <a href="/guides/raf-cbat-preparation.html">RAF CBAT skills preparation</a></p></nav><!-- uk-hub-nav end --><h2>By country</h2><!-- uk-country-card start --><a class="g" href="/guides/aptitude-tests-uk.html"><em>United Kingdom</em><strong>Free Aptitude Test Practice UK 2026 – RAF DAA, Army ACT &amp; CBAT</strong><span>Free UK aptitude test practice for RAF and Royal Navy DAA, British Army ACT and RAF CBAT skills. Choose your route and train on iPhone every day for free.</span></a><!-- uk-country-card end -->
-<a class="g" href="/guides/tests-psychotechniques-france.html"><em>France</em><strong>Tests psychotechniques France 2026 : app gratuite pilote, police, SNCF</strong><span>Tests psychotechniques en France 2026 : app gratuite pour les sélections pilote (Air France, ENAC, EOPN), police, gendarmerie et SNCF/RATP. 5 sessions gratuites par jour, exercice au choix.</span></a>
-<a class="g" href="/guides/aptitude-tests-usa.html"><em>United States</em><strong>Free Aptitude Test Practice App USA 2026 – Military, Police, ATC, 911</strong><span>Free aptitude test practice app for 2026 US selections: AFOQT, TBAS, ASTB-E, SIFT, FAA ATSA, NYPD and CritiCall. Free iPhone practice every day, on any exercise.</span></a>
-<a class="g" href="/guides/eignungstest-deutschland-kostenlos-ueben.html"><em>Deutschland</em><strong>Eignungstest kostenlos üben 2026: App für Polizei, Bundeswehr und DLR</strong><span>Eignungstest 2026 kostenlos üben: App für Polizei-Einstellungstest, Bundeswehr-CAT und DLR-Pilotentest. Jeden Tag kostenlos auf dem iPhone trainieren, freie Übungswahl.</span></a>
-<a class="g" href="/guides/aptitude-tests-canada.html"><em>Canada</em><strong>Free Aptitude Test Practice App Canada 2026 – Police and Armed Forces</strong><span>Free aptitude test practice app for 2026 Canadian selections: RCMP, provincial and Québec police, Canadian Armed Forces. Free iPhone practice every day, on any exercise.</span></a>
-<a class="g" href="/guides/aptitude-tests-australia.html"><em>Australia</em><strong>Free Aptitude Test Practice App Australia 2026 – ADF and Airservices ATC</strong><span>Free aptitude test practice app for 2026 Australian selections: ADF Job Opportunities Assessment, Officer Aviation and Airservices air traffic control. Free iPhone practice every day.</span></a>
-<!-- switzerland-country start --><a class="g" href="/guides/aptitude-tests-switzerland.html"><em>Switzerland · English</em><strong>Free Aptitude Test Practice Switzerland 2026 – Pilot &amp; ATC</strong><span>Free Swiss aptitude test practice app for SPHAIR, SWISS/Edelweiss DLR and Skyguide FEAST. 5 free iPhone sessions daily, any available exercise.</span></a>
-<a class="g" href="/guides/tests-aptitude-suisse.html"><em>Suisse · Français</em><strong>Tests d’aptitude Suisse 2026 : application gratuite pilote et ATC</strong><span>Préparation gratuite aux tests d’aptitude en Suisse : SPHAIR, DLR SWISS/Edelweiss et FEAST Skyguide. 5 sessions iPhone par jour, exercice au choix.</span></a>
-<a class="g" href="/guides/eignungstest-schweiz-kostenlos-ueben.html"><em>Schweiz · Deutsch</em><strong>Eignungstest Schweiz 2026 kostenlos üben: Pilot und Fluglotse</strong><span>Eignungstest Schweiz kostenlos üben: SPHAIR, SWISS/Edelweiss DLR und Skyguide FEAST. 5 kostenlose iPhone-Einheiten täglich, freie Übungswahl.</span></a>
-<!-- switzerland-country end --><h2>Compare mobile apps</h2>
-<a class="g" href="/guides/brain-preflight-vs-skytest-lite.html"><em>iPhone apps</em><strong>Free SkyTest Alternative 2026 – DLR BU/GU Practice App</strong><span>Free SkyTest alternative for the 2026 DLR BU/GU pilot test: 5 free practice sessions every day on iPhone, versus the paid SkyTest BU/GU Lite app.</span></a>
-<a class="g" href="/guides/brain-preflight-vs-pilot-aptitude-pro.html"><em>iPhone apps</em><strong>Free Pilot Aptitude Pro Alternative 2026 – iPhone App</strong><span>Free Pilot Aptitude Pro alternative for 2026 pilot aptitude tests: 5 free practice sessions every day on iPhone, no purchase required.</span></a>
-<h2>US police and 911 dispatcher</h2>
-<a class="g" href="/guides/nypd-police-exam-preparation.html"><em>US Police · NYPD · civil service</em><strong>Free NYPD Exam Practice App 2026 – Police Officer Exam</strong><span>Free NYPD exam practice app for the 2026 police officer exam. 5 free sessions every day on iPhone: memory, reasoning and attention.</span></a>
-<a class="g" href="/guides/911-dispatcher-criticall-preparation.html"><em>911 Dispatcher · CritiCall</em><strong>Free CritiCall Practice App 2026 – 911 Dispatcher Test</strong><span>Free CritiCall practice app for the 2026 911 dispatcher test. 5 free sessions every day on iPhone: multitasking, memory, data entry-style checking.</span></a>
-<h2>English</h2><!-- exam-pages-English start -->
-<a class="g" href="/guides/asvab-practice-test.html"><em>United States · military enlistment</em><strong>ASVAB Practice Questions and 10 Adaptive Subtests</strong><span>Try five free ASVAB questions with worked answers, then practice all 10 adaptive CAT-ASVAB subtests on iPhone and review the four AFQT subject areas.</span></a>
-<a class="g" href="/guides/border-patrol-entrance-exam-practice.html"><em>United States · U.S. Border Patrol</em><strong>Border Patrol Entrance Exam: Logical Reasoning Practice</strong><span>Try three BPA logical reasoning questions. Use only the passage to decide what must be true and what cannot be concluded, then compare your answers.</span></a>
-<a class="g" href="/guides/civil-service-verbal-numerical-test-practice.html"><em>United Kingdom · Civil Service</em><strong>UK Civil Service Verbal and Numerical Test Practice</strong><span>Try a Civil Service verbal passage and numerical data questions. Learn when to choose Cannot say and find the official guidance on timing and calculators.</span></a>
-<!-- exam-pages-English end -->
-<!-- question-guide-en start --><a class="g" href="/guides/aptitude-test-practice-questions.html"><em>Preparation questions</em><strong>Free Aptitude Test Practice: Questions &amp; Answers 2026</strong><span>Aptitude test preparation questions answered: free daily practice, pilot and ATC tests, SPHAIR vs DLR, mechanical reasoning, offline access and study routines.</span></a><!-- question-guide-en end --><!-- uk-route-cards start --><a class="g" href="/guides/raf-daa-practice-test.html"><em>United Kingdom</em><strong>RAF &amp; Royal Navy DAA Practice Test: Work Rate and Mechanics</strong><span>Try a timed DAA work rate exercise and a worked lever question. See all six Defence Aptitude Assessment areas and the RAF and Royal Navy practice resources.</span></a><a class="g" href="/guides/army-cognitive-test-practice.html"><em>United Kingdom</em><strong>British Army Cognitive Test Practice: ACT Verifier</strong><span>Prepare for the Army Cognitive Test (Verifier) at the soldier assessment centre. Try ACT number fluency and word rules, then use the official practice tool.</span></a><a class="g" href="/guides/raf-cbat-preparation.html"><em>United Kingdom</em><strong>Free RAF CBAT Preparation App 2026 – Cranwell Aptitude Practice</strong><span>Free RAF CBAT skills practice on iPhone: tracking, multitasking, spatial reasoning, memory and maths. Cranwell route explained; 5 free sessions every day.</span></a><!-- uk-route-cards end --><!-- switzerland-en start --><a class="g" href="/guides/sphair-screening-preparation.html"><em>Switzerland · SPHAIR screening preparation</em><strong>Free SPHAIR Screening Preparation App 2026 – Swiss Pilot Test</strong><span>Prepare for SPHAIR screening with free daily iPhone practice: mental maths, memory, spatial and technical understanding. 5 sessions every day.</span></a>
-<a class="g" href="/guides/swiss-pilot-assessment-preparation.html"><em>Switzerland · SWISS pilot selection</em><strong>Free SWISS Pilot Assessment Preparation 2026 – DLR &amp; SPHAIR</strong><span>Free SWISS pilot selection practice on iPhone: prepare DLR-related maths, memory, spatial and mechanical skills. 5 sessions daily; SPHAIR route explained.</span></a>
-<a class="g" href="/guides/edelweiss-pilot-assessment-preparation.html"><em>Switzerland · Edelweiss pilot selection</em><strong>Free Edelweiss Pilot Selection Preparation 2026 – DLR Test</strong><span>Prepare Edelweiss pilot selection with free daily DLR-related practice. EFA, SPHAIR and German-language requirements explained; 5 iPhone sessions daily.</span></a>
-<a class="g" href="/guides/skyguide-feast-test-preparation.html"><em>Switzerland · Skyguide FEAST preparation</em><strong>Free Skyguide FEAST Test Preparation App 2026 – Swiss ATC</strong><span>Free Skyguide FEAST preparation on iPhone: mental maths, memory, attention, spatial and multitasking practice. 5 sessions daily; selection stages explained.</span></a>
-<a class="g" href="/guides/sphair-vs-dlr-test.html"><em>Switzerland · SPHAIR vs DLR</em><strong>SPHAIR vs DLR 2026 – Swiss Pilot Selection &amp; Free Practice</strong><span>SPHAIR or DLR for SWISS and Edelweiss? Compare screening, flight course, certificates and preparation. Start 5 free daily practice sessions on iPhone.</span></a>
-<a class="g" href="/guides/mechanical-comprehension-practice.html"><em>Switzerland · Mechanical comprehension: examples and answers</em><strong>Free Mechanical Comprehension Practice 2026 – App &amp; Examples</strong><span>Free mechanical comprehension practice with worked examples: gears, levers, pulleys, pressure and springs. 5 daily iPhone sessions for SPHAIR and DLR skills.</span></a>
-<!-- switzerland-en end -->
-<a class="g" href="/guides/atsa-test-preparation.html"><em>North America</em><strong>Free ATSA Practice App 2026 – Air Traffic Skills Assessment</strong><span>Free ATSA practice app for the 2026 FAA Air Traffic Skills Assessment. 5 free air traffic controller test sessions every day on iPhone, a free alternative to paid ATSA prep.</span></a>
-<a class="g" href="/guides/brain-preflight-vs-atsapro.html"><em>North America</em><strong>Free ATSAPro Alternative 2026 – ATSA Practice App</strong><span>Free ATSAPro alternative for the 2026 ATSA: Brain Preflight gives 5 free ATSA practice sessions every day on iPhone. ATSAPro is a $9.99 paid app.</span></a>
-<a class="g" href="/guides/afoqt-practice-app.html"><em>United States · Air Force officer</em><strong>AFOQT Practice Questions: Tables, Instruments and Blocks</strong><span>Try AFOQT Table Reading, Instrument Comprehension and Block Counting examples. Check each solution and see how the official subtests are timed.</span></a>
-<a class="g" href="/guides/tbas-practice-test.html"><em>North America</em><strong>Free TBAS Practice App 2026 – Test of Basic Aviation Skills</strong><span>Free TBAS practice app for the 2026 Test of Basic Aviation Skills: tracking, multitasking, spatial and memory drills, 5 free sessions every day on iPhone.</span></a>
-<a class="g" href="/guides/astb-practice-test.html"><em>North America</em><strong>Free ASTB-E Practice App 2026 – Aviation Selection Test Battery</strong><span>Free ASTB-E practice app for the 2026 Aviation Selection Test Battery: maths, spatial and divided-attention drills, 5 free sessions every day on iPhone.</span></a>
-<a class="g" href="/guides/sift-practice-test.html"><em>North America</em><strong>Free SIFT Practice App 2026 – Army Flight Aptitude Test</strong><span>Free SIFT practice app for the 2026 Army Selection Instrument for Flight Training: maths, mental rotation and pattern drills, 5 free sessions every day on iPhone.</span></a>
-<a class="g" href="/guides/brain-preflight-vs-mometrix-afoqt.html"><em>North America</em><strong>Free Mometrix AFOQT Alternative 2026 – AFOQT Practice App</strong><span>Free alternative to Mometrix for AFOQT practice in 2026: free practice every day on iPhone for maths, spatial and visual-checking skills. Mometrix sells a $79.99/month course and study guide.</span></a>
-<a class="g" href="/guides/us-military-aviation-aptitude-tests.html"><em>North America · AFOQT · TBAS · ASTB-E · SIFT</em><strong>Free AFOQT, TBAS, ASTB-E and SIFT Practice App 2026 – US Military Aviation Tests</strong><span>Compare the 2026 US military aviation aptitude tests (AFOQT, TBAS, ASTB-E, SIFT): who takes each one, what it measures, and which free iPhone exercises fit.</span></a>
-<a class="g" href="/guides/rcmp-entrance-assessment-preparation.html"><em>Canada · RCMP</em><strong>RCMP Online Entrance Assessment: Practice Questions</strong><span>Practise RCMP-style memory, numerical and verbal reasoning questions. Check the answers and find the Royal Canadian Mounted Police preparatory guide.</span></a>
-<a class="g" href="/guides/cfat-seaf-canadian-forces.html"><em>North America</em><strong>CFAT Replaced by SEAF – Canadian Forces Guide 2026</strong><span>CFAT was replaced by SEAF in October 2024. Understand the current Canadian Forces application process, separate aircrew selection and free general aptitude practice.</span></a>
-<a class="g" href="/guides/compass-test.html"><em>EPST · Europe, India, Gulf, Asia</em><strong>Free COMPASS Pilot Aptitude Test Practice App 2026</strong><span>Free COMPASS pilot aptitude test practice app for 2026. Examples plus 5 free sessions every day on iPhone: maths, memory, spatial and tracking skills.</span></a>
-<a class="g" href="/guides/cut-e-test.html"><em>Aon · online screening</em><strong>Free cut-e Pilot Test Practice App 2026 – Aon Scales</strong><span>Free cut-e pilot test practice app for 2026 Aon pilot aptitude tests. Examples plus 5 free sessions every day on iPhone.</span></a>
-<a class="g" href="/guides/pilapt-test.html"><em>Pilot selection · verify your invitation</em><strong>Free PILAPT Practice App 2026 – Pilot Aptitude Test</strong><span>Free PILAPT practice app for the 2026 pilot aptitude test. 5 free pilot aptitude assessment sessions every day on iPhone: tracking, memory, maths and spatial reasoning.</span></a>
-<a class="g" href="/guides/dlr-test.html"><em>German Aerospace Center · Lufthansa Group</em><strong>Free DLR Test Preparation App 2026 – BU/GU Pilot Test</strong><span>Free DLR test preparation app for the 2026 BU/GU pilot selection and DLR CBT. 5 free sessions every day on iPhone, a free alternative to paid SkyTest software.</span></a>
-<a class="g" href="/guides/feast-test-atc.html"><em>EUROCONTROL · air traffic control</em><strong>Free FEAST Practice App 2026 – EUROCONTROL ATC Test</strong><span>Free FEAST practice app for the 2026 EUROCONTROL air traffic controller test. 5 free ATC aptitude sessions every day on iPhone.</span></a>
+<section class="country" aria-labelledby="australia">
+  <h2 id="australia"><span class="flag" aria-hidden="true">🇦🇺</span> Australia</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/aptitude-tests-australia.html" lang="en"><em>Australia</em><strong>Free Aptitude Test Practice App Australia 2026 – ADF and Airservices ATC</strong><span>Free aptitude test practice app for 2026 Australian selections: ADF Job Opportunities Assessment, Officer Aviation and Airservices air traffic control. Free iPhone practice every day.</span></a>
+    <a class="g" href="/guides/adf-aptitude-tests-joa-officer-aviation.html" lang="en"><em>Australia · Defence recruiting</em><strong>ADF JOA Practice Questions and Officer Aviation Selection</strong><span>Try numerical, verbal and abstract reasoning questions for the ADF Job Opportunities Assessment. See how the JOA fits into Officer Aviation selection.</span></a>
+    <a class="g" href="/guides/airservices-air-traffic-control-test.html" lang="en"><em>Australia · air traffic control</em><strong>Free Airservices ATC Practice App 2026 – Air Traffic Controller Ability Tests</strong><span>Airservices Australia air traffic controller ability tests 2026: what the online assessment measures and which free iPhone exercises fit. 5 free sessions every day.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<a class="g" href="/guides/afcat-exam-preparation.html"><em>Indian Air Force · AFCAT · AFSB</em><strong>Free AFCAT Practice App 2026 – AFCAT &amp; CPSS Preparation</strong><span>Free AFCAT practice app for 2026 AFCAT and CPSS preparation. 5 free sessions every day on iPhone: reasoning, maths, memory and multitasking.</span></a>
+<section class="country" aria-labelledby="austria">
+  <h2 id="austria"><span class="flag" aria-hidden="true">🇦🇹</span> Austria</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/bundesheer-eignungspruefung-ueben.html" lang="de"><em>Österreich · Bundesheer</em><strong>Bundesheer Eignungsprüfung 2026: psychologische Tests kostenlos üben</strong><span>Bundesheer Eignungsprüfung und Stellung 2026: die psychologischen Tests kostenlos üben, 5 kostenlose Einheiten pro Tag auf dem iPhone.</span></a>
+    <a class="g" href="/guides/polizei-aufnahmetest-oesterreich-ueben.html" lang="de"><em>Österreich · Polizei</em><strong>Polizei-Aufnahmetest Österreich: Beispielaufgaben</strong><span>Löse Beispiele für die psychologische Eignungsdiagnostik der Polizei Österreich und vergleiche deine Antworten. Hier findest du auch die amtlichen Hinweise.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<a class="g" href="/guides/aon-assessment-jobs.html"><em>Aon · banks, consulting, graduate schemes</em><strong>Free Aon Assessment Practice App 2026 – Job Aptitude Tests</strong><span>Free Aon assessment practice app for 2026 job aptitude tests (cut-e scales). 5 free sessions every day on iPhone: numbers, logic, memory and attention.</span></a>
-<a class="g" href="/guides/airservices-air-traffic-control-test.html"><em>Australia · air traffic control</em><strong>Free Airservices ATC Practice App 2026 – Air Traffic Controller Ability Tests</strong><span>Airservices Australia air traffic controller ability tests 2026: what the online assessment measures and which free iPhone exercises fit. 5 free sessions every day.</span></a>
-<a class="g" href="/guides/adf-aptitude-tests-joa-officer-aviation.html"><em>Australia · Defence recruiting</em><strong>ADF JOA Practice Questions and Officer Aviation Selection</strong><span>Try numerical, verbal and abstract reasoning questions for the ADF Job Opportunities Assessment. See how the JOA fits into Officer Aviation selection.</span></a>
-<a class="g" href="/guides/rsaf-compass-pilot-selection.html"><em>Singapore · RSAF</em><strong>Free RSAF COMPASS Practice App 2026 – Pilot Aptitude Test (Singapore)</strong><span>RSAF COMPASS aptitude test 2026 for Pilot, WSO (Fighter), AWO and UAV Pilot: what is publicly known and which free iPhone exercises give general practice.</span></a>
+<section class="country" aria-labelledby="canada">
+  <h2 id="canada"><span class="flag" aria-hidden="true">🇨🇦</span> Canada</h2>
+  <h3 lang="en">English</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/aptitude-tests-canada.html" lang="en"><em>Canada</em><strong>Free Aptitude Test Practice App Canada 2026 – Police and Armed Forces</strong><span>Free aptitude test practice app for 2026 Canadian selections: RCMP, provincial and Québec police, Canadian Armed Forces. Free iPhone practice every day, on any exercise.</span></a>
+    <a class="g" href="/guides/cfat-seaf-canadian-forces.html" lang="en"><em>North America</em><strong>CFAT Replaced by SEAF – Canadian Forces Guide 2026</strong><span>CFAT was replaced by SEAF in October 2024. Understand the current Canadian Forces application process, separate aircrew selection and free general aptitude practice.</span></a>
+    <a class="g" href="/guides/rcmp-entrance-assessment-preparation.html" lang="en"><em>Canada · RCMP</em><strong>RCMP Online Entrance Assessment: Practice Questions</strong><span>Practise RCMP-style memory, numerical and verbal reasoning questions. Check the answers and find the Royal Canadian Mounted Police preparatory guide.</span></a>
+  </div>
+  <h3 lang="fr">Français</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/evaluation-en-ligne-grc-pratique.html" lang="fr"><em>Canada · GRC</em><strong>Évaluation en ligne de la GRC : exercices corrigés</strong><span>Essayez des exercices de mémoire, de calcul et de raisonnement pour préparer l’évaluation en ligne de la GRC. Consultez les corrigés et le guide officiel.</span></a>
+    <a class="g" href="/guides/tests-entree-enpq-police-quebec.html" lang="fr"><em>Québec</em><strong>Tests d’entrée ENPQ 2026 : jugement situationnel et M-Pulse</strong><span>Tests d’entrée ENPQ 2026 : ce que mesurent le test de jugement situationnel et le M-Pulse, pourquoi l’ENPQ ne demande aucune préparation spécifique, et ce qu’une app peut faire.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<h2>Français</h2><!-- exam-pages-Français start -->
-<a class="g" href="/guides/evaluation-en-ligne-grc-pratique.html"><em>Canada · GRC</em><strong>Évaluation en ligne de la GRC : exercices corrigés</strong><span>Essayez des exercices de mémoire, de calcul et de raisonnement pour préparer l’évaluation en ligne de la GRC. Consultez les corrigés et le guide officiel.</span></a>
-<!-- exam-pages-Français end -->
-<!-- question-guide-fr start --><a class="g" href="/guides/questions-preparation-tests-psychotechniques.html"><em>Questions de préparation</em><strong>Tests psychotechniques gratuits : questions et réponses 2026</strong><span>Réponses aux questions de préparation psychotechnique : entraînement gratuit, sélection pilote, FEAST, SPHAIR ou DLR, mécanique et exercices hors ligne.</span></a><!-- question-guide-fr end --><!-- switzerland-fr start --><a class="g" href="/guides/preparation-screening-sphair.html"><em>Suisse · Préparation au screening SPHAIR</em><strong>Préparation SPHAIR gratuite 2026 : screening pilote sur iPhone</strong><span>Préparez le screening SPHAIR avec une application gratuite : calcul mental, mémoire, spatial et compréhension mécanique. 5 sessions iPhone par jour.</span></a>
-<a class="g" href="/guides/selection-pilote-swiss-dlr.html"><em>Suisse · Sélection pilote SWISS</em><strong>Sélection pilote SWISS 2026 : préparation DLR gratuite</strong><span>Préparez la sélection pilote SWISS : calcul, mémoire, spatial et mécanique sur iPhone. 5 sessions gratuites par jour ; parcours DLR et SPHAIR expliqués.</span></a>
-<a class="g" href="/guides/selection-pilote-edelweiss.html"><em>Suisse · Sélection pilote Edelweiss</em><strong>Sélection pilote Edelweiss 2026 : préparation gratuite DLR</strong><span>Préparez la sélection pilote Edelweiss : DLR, SPHAIR, EFA, allemand et mécanique. Application iPhone avec 5 sessions gratuites chaque jour.</span></a>
-<a class="g" href="/guides/preparation-test-feast-skyguide.html"><em>Suisse · Préparation FEAST Skyguide</em><strong>Test FEAST Skyguide 2026 : préparation gratuite sur iPhone</strong><span>Préparez FEAST Skyguide gratuitement : calcul, mémoire, spatial, attention et multitâche. 5 sessions iPhone par jour et guide de la sélection en Suisse.</span></a>
-<a class="g" href="/guides/sphair-ou-dlr.html"><em>Suisse · SPHAIR ou DLR</em><strong>SPHAIR ou DLR 2026 : choisir sa préparation pilote en Suisse</strong><span>SPHAIR ou DLR pour SWISS et Edelweiss ? Comparez screening, cours de vol, certificats et préparation gratuite sur iPhone : 5 sessions chaque jour.</span></a>
-<a class="g" href="/guides/comprehension-mecanique-test.html"><em>Suisse · Compréhension mécanique : exercices corrigés</em><strong>Test de compréhension mécanique 2026 : exercices gratuits</strong><span>Compréhension mécanique : exercices corrigés gratuits sur engrenages, leviers, poulies, pression et ressorts. App iPhone, 5 sessions quotidiennes.</span></a>
-<!-- switzerland-fr end -->
-<a class="g" href="/guides/tests-entree-enpq-police-quebec.html"><em>Québec</em><strong>Tests d’entrée ENPQ 2026 : jugement situationnel et M-Pulse</strong><span>Tests d’entrée ENPQ 2026 : ce que mesurent le test de jugement situationnel et le M-Pulse, pourquoi l’ENPQ ne demande aucune préparation spécifique, et ce qu’une app peut faire.</span></a>
-<a class="g" href="/guides/test-psychotechnique-pilote.html"><em>PSY0 · cadet · ENAC</em><strong>Tests psychotechniques pilote 2026 : app gratuite Air France PSY0, PSY1</strong><span>Préparation gratuite aux tests psychotechniques pilote 2026 : Air France Cadets PSY0, PSY1, PSY2 et ENAC EPL. Application iPhone gratuite, 5 sessions par jour, même hors ligne.</span></a>
-<a class="g" href="/guides/brain-preflight-ou-pilotest.html"><em>Air France · PSY0 · PSY1</em><strong>Pilotest ou app iPhone ? PSY0 et PSY1 Air France 2026</strong><span>Pilotest ou Brain Preflight pour les tests psychotechniques pilote 2026 (Air France PSY0, PSY1, ENAC) : site web gratuit ou application iPhone gratuite hors ligne. Comparatif.</span></a>
-<a class="g" href="/guides/enac-epl-tests-psychotechniques.html"><em>ENAC · EPL</em><strong>Tests psychotechniques EPL ENAC 2027 : app gratuite pour le Psy 1</strong><span>Concours EPL de l’ENAC 2027 : les cinq étapes, ce que l’on sait des tests psychotechniques et psychomoteurs (Psy 1), et un entraînement gratuit sur iPhone.</span></a>
-<a class="g" href="/guides/eopn-selection-pilote-armee-air-espace.html"><em>Armée de l’Air et de l’Espace</em><strong>Tests EOPN 2026 : app gratuite pour le TAMI-C et le CSSA de Tours</strong><span>Sélection EOPN de l’Armée de l’Air et de l’Espace : présélection TAMI-C, tests du CSSA de Tours (palonnier, tests cognitifs, simulation pilote) et entraînement gratuit sur iPhone.</span></a>
-<a class="g" href="/guides/icna-concours-controleur-aerien.html"><em>Contrôle aérien · DGAC</em><strong>Concours ICNA 2027 : épreuves, anglais, entretien (sans psychotechnique)</strong><span>Concours ICNA 2027 de contrôleur aérien : écrits de la banque CCINP, oraux, anglais et entretien. Pas de tests psychotechniques. Ce qu’il faut préparer, et la différence avec FEAST.</span></a>
-<a class="g" href="/guides/test-psychotechnique-sncf-ratp.html"><em>Conducteur train · métro · tram</em><strong>Tests psychotechniques SNCF et RATP 2026 : app gratuite</strong><span>Tests psychotechniques SNCF et RATP 2026 : application gratuite pour s’entraîner, 5 sessions gratuites par jour sur iPhone.</span></a>
+<section class="country" aria-labelledby="danske-guider">
+  <h2 id="danske-guider"><span class="flag" aria-hidden="true">🇩🇰</span> Denmark</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/kvote-2-danmark.html" lang="da"><em>Danmark · universitet</em><strong>uniTEST eller KU’s kvote 2-prøve?</strong><span>Sammenlign de to prøver, og find det rigtige træningsprogram.</span></a>
+    <a class="g" href="/guides/unitest-forberedelse.html" lang="da"><em>SDU · uniTEST</em><strong>uniTEST-forberedelse: format og gratis opgaver</strong><span>95 spørgsmål på 150 minutter. Prøv originale eksempler med forklaring.</span></a>
+    <a class="g" href="/guides/ku-kvote-2-proeve.html" lang="da"><em>Københavns Universitet · kvote 2</em><strong>KU’s kvote 2-prøve: format og øvelser</strong><span>Læs om de seks kategorier, prøv opgaver, og se vores fulde øveprøve med Premium.</span></a>
+  </div>
+  <p lang="da"><a href="https://expectedvaluestudio.com/preflight/da/">Brain Preflight på dansk</a></p>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<a class="g" href="/guides/test-compass-fr.html"><em>EPST · guide en français</em><strong>Test COMPASS pilote 2026 : application gratuite d’entraînement</strong><span>Test COMPASS pilote 2026 : application gratuite d’entraînement au test d’aptitude, 5 sessions gratuites par jour sur iPhone.</span></a>
-<a class="g" href="/guides/test-pilapt-fr.html"><em>Sélection pilote · guide en français</em><strong>Test PILAPT 2026 : application gratuite pour s’entraîner</strong><span>Test PILAPT 2026 : application gratuite pour s’entraîner au test d’aptitude pilote, 5 sessions gratuites par jour sur iPhone.</span></a>
+<section class="country" aria-labelledby="france">
+  <h2 id="france"><span class="flag" aria-hidden="true">🇫🇷</span> France</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/tests-psychotechniques-france.html" lang="fr"><em>France</em><strong>Tests psychotechniques France 2026 : app gratuite pilote, police, SNCF</strong><span>Tests psychotechniques en France 2026 : app gratuite pour les sélections pilote (Air France, ENAC, EOPN), police, gendarmerie et SNCF/RATP. Entraînement gratuit chaque jour sur iPhone.</span></a>
+    <a class="g" href="/guides/test-psychotechnique-pilote.html" lang="fr"><em>PSY0 · cadet · ENAC</em><strong>Tests psychotechniques pilote 2026 : app gratuite Air France PSY0, PSY1</strong><span>Préparez le PSY0, les 16 épreuves du Psy1 Cadets ou les 13 épreuves du parcours pilotes professionnels Air France / HOP. Entraînez-vous gratuitement chaque jour sur iPhone.</span></a>
+    <a class="g" href="/guides/enac-epl-tests-psychotechniques.html" lang="fr"><em>ENAC · EPL</em><strong>Tests psychotechniques EPL ENAC 2027 : app gratuite pour le Psy 1</strong><span>Concours EPL de l’ENAC 2027 : les cinq étapes, ce que l’on sait des tests psychotechniques et psychomoteurs (Psy 1), et un entraînement gratuit sur iPhone.</span></a>
+    <a class="g" href="/guides/brain-preflight-ou-pilotest.html" lang="fr"><em>Air France · PSY0 · PSY1</em><strong>Pilotest ou app iPhone ? PSY0 et PSY1 Air France 2026</strong><span>Pilotest ou Brain Preflight pour les tests psychotechniques pilote 2026 (Air France PSY0, PSY1, ENAC) : site web gratuit ou application iPhone gratuite hors ligne. Comparatif.</span></a>
+    <a class="g" href="/guides/eopn-selection-pilote-armee-air-espace.html" lang="fr"><em>Armée de l’Air et de l’Espace</em><strong>Tests EOPN 2026 : app gratuite pour le TAMI-C et le CSSA de Tours</strong><span>Sélection EOPN de l’Armée de l’Air et de l’Espace : présélection TAMI-C, tests du CSSA de Tours (palonnier, tests cognitifs, simulation pilote) et entraînement gratuit sur iPhone.</span></a>
+    <a class="g" href="/guides/icna-concours-controleur-aerien.html" lang="fr"><em>Contrôle aérien · DGAC</em><strong>Concours ICNA 2027 : épreuves, anglais, entretien (sans psychotechnique)</strong><span>Concours ICNA 2027 de contrôleur aérien : écrits de la banque CCINP, oraux, anglais et entretien. Pas de tests psychotechniques. Ce qu’il faut préparer, et la différence avec FEAST.</span></a>
+    <a class="g" href="/guides/concours-gardien-de-la-paix-tests-psychotechniques.html" lang="fr"><em>Police nationale · gardien de la paix</em><strong>Tests psychotechniques gardien de la paix 2026 : app gratuite</strong><span>Tests psychotechniques gardien de la paix 2026 : application gratuite pour s’entraîner au concours, 5 sessions gratuites par jour sur iPhone.</span></a>
+    <a class="g" href="/guides/test-psychotechnique-gendarmerie.html" lang="fr"><em>Sous-officier · concours externe</em><strong>Test psychotechnique gendarmerie 2026 : app gratuite</strong><span>Test psychotechnique gendarmerie 2026 : s’entraîner gratuitement sur application, 5 sessions gratuites par jour. Logique, calcul, mémoire, attention.</span></a>
+    <a class="g" href="/guides/test-psychotechnique-sncf-ratp.html" lang="fr"><em>Conducteur train · métro · tram</em><strong>Tests psychotechniques SNCF et RATP 2026 : app gratuite</strong><span>Tests psychotechniques SNCF et RATP 2026 : application gratuite pour s’entraîner, 5 sessions gratuites par jour sur iPhone.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<a class="g" href="/guides/test-psychotechnique-gendarmerie.html"><em>Sous-officier · concours externe</em><strong>Test psychotechnique gendarmerie 2026 : app gratuite</strong><span>Test psychotechnique gendarmerie 2026 : s’entraîner gratuitement sur application, 5 sessions gratuites par jour. Logique, calcul, mémoire, attention.</span></a>
-<a class="g" href="/guides/concours-gardien-de-la-paix-tests-psychotechniques.html"><em>Police nationale · gardien de la paix</em><strong>Tests psychotechniques gardien de la paix 2026 : app gratuite</strong><span>Tests psychotechniques gardien de la paix 2026 : application gratuite pour s’entraîner au concours, 5 sessions gratuites par jour sur iPhone.</span></a>
+<section class="country" aria-labelledby="germany">
+  <h2 id="germany"><span class="flag" aria-hidden="true">🇩🇪</span> Germany</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/eignungstest-deutschland-kostenlos-ueben.html" lang="de"><em>Deutschland</em><strong>Eignungstest kostenlos üben 2026: App für Polizei, Bundeswehr und DLR</strong><span>Eignungstest 2026 kostenlos üben: App für Polizei-Einstellungstest, Bundeswehr-CAT und DLR-Pilotentest. Jeden Tag kostenlos auf dem iPhone trainieren, freie Übungswahl.</span></a>
+    <a class="g" href="/guides/bundespolizei-intelligenztest-ueben.html" lang="de"><em>Deutschland · Bundespolizei</em><strong>Bundespolizei: Intelligenztest für den gehobenen Dienst</strong><span>Übe Wortanalogien, Zahlenreihen und räumliches Denken. Löse Beispielaufgaben und vergleiche den Testaufbau mit dem Infoblatt der Bundespolizei.</span></a>
+    <a class="g" href="/guides/polizei-einstellungstest-kostenlos-ueben.html" lang="de"><em>Bundespolizei · Landespolizei</em><strong>Polizei Einstellungstest kostenlos üben – App 2026</strong><span>Polizei-Einstellungstest 2026 kostenlos üben: Testtrainer-App für Bundespolizei und Landespolizei, täglich kostenlos trainieren auf dem iPhone. Logik, Kopfrechnen, Merkfähigkeit, Konzentration.</span></a>
+    <a class="g" href="/guides/bundeswehr-einstellungstest-cat-test-ueben.html" lang="de"><em>Bundeswehr · Karrierecenter</em><strong>Bundeswehr CAT-Test üben: Aufgaben mit Lösungen</strong><span>Probiere Beispielaufgaben zu Sprache, Rechnen und Logik. Lies nach, wie der adaptive CAT funktioniert und wo du den Assessment-Trainer der Bundeswehr findest.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<h2>Deutsch</h2><!-- exam-pages-Deutsch start -->
-<a class="g" href="/guides/bundespolizei-intelligenztest-ueben.html"><em>Deutschland · Bundespolizei</em><strong>Bundespolizei: Intelligenztest für den gehobenen Dienst</strong><span>Übe Wortanalogien, Zahlenreihen und räumliches Denken. Löse Beispielaufgaben und vergleiche den Testaufbau mit dem Infoblatt der Bundespolizei.</span></a>
-<a class="g" href="/guides/polizei-aufnahmetest-oesterreich-ueben.html"><em>Österreich · Polizei</em><strong>Polizei-Aufnahmetest Österreich: Beispielaufgaben</strong><span>Löse Beispiele für die psychologische Eignungsdiagnostik der Polizei Österreich und vergleiche deine Antworten. Hier findest du auch die amtlichen Hinweise.</span></a>
-<!-- exam-pages-Deutsch end -->
-<!-- question-guide-de start --><a class="g" href="/guides/eignungstest-vorbereitung-fragen-antworten.html"><em>Fragen zur Vorbereitung</em><strong>Eignungstest kostenlos üben: Fragen und Antworten 2026</strong><span>Fragen zur Eignungstest-Vorbereitung: kostenlos üben, Pilot und Fluglotse, SPHAIR oder DLR, technisches Verständnis, Offline-Training und tägliche Routine.</span></a><!-- question-guide-de end --><!-- switzerland-de start --><a class="g" href="/guides/sphair-screening-kostenlos-ueben.html"><em>Schweiz · SPHAIR-Screening vorbereiten</em><strong>SPHAIR-Screening 2026 kostenlos üben: Vorbereitungs-App</strong><span>SPHAIR-Screening kostenlos vorbereiten: Kopfrechnen, Gedächtnis, Raumvorstellung und Technik auf dem iPhone. 5 kostenlose Einheiten täglich.</span></a>
-<a class="g" href="/guides/swiss-piloten-eignungstest.html"><em>Schweiz · SWISS-Pilotenauswahl</em><strong>SWISS-Pilotenauswahl 2026: DLR-Test kostenlos vorbereiten</strong><span>SWISS-Pilotenauswahl vorbereiten: DLR, SPHAIR, Rechnen, Gedächtnis und Technik. 5 kostenlose iPhone-Einheiten pro Tag mit Brain Preflight.</span></a>
-<a class="g" href="/guides/edelweiss-pilotenauswahl-vorbereitung.html"><em>Schweiz · Edelweiss-Pilotenauswahl</em><strong>Edelweiss-Pilotenauswahl 2026: DLR kostenlos vorbereiten</strong><span>Edelweiss-Pilotenauswahl: DLR, SPHAIR, EFA und Deutschkenntnisse. Mit der iPhone-App täglich 5 kostenlose Einheiten für Rechnen, Gedächtnis und Technik.</span></a>
-<a class="g" href="/guides/skyguide-feast-test-vorbereitung.html"><em>Schweiz · Skyguide FEAST vorbereiten</em><strong>Skyguide FEAST-Test 2026 kostenlos üben: Vorbereitungs-App</strong><span>Skyguide FEAST-Test kostenlos vorbereiten: Rechnen, Gedächtnis, Raumvorstellung und Multitasking. 5 iPhone-Einheiten täglich für die Fluglotsenauswahl.</span></a>
-<a class="g" href="/guides/sphair-oder-dlr-test.html"><em>Schweiz · SPHAIR oder DLR</em><strong>SPHAIR oder DLR 2026: Pilotenauswahl Schweiz und Vorbereitung</strong><span>SPHAIR oder DLR für SWISS und Edelweiss? Screening, Flugkurs und Zertifikat vergleichen. Dazu täglich 5 kostenlose Übungseinheiten auf dem iPhone.</span></a>
-<a class="g" href="/guides/technisches-verstaendnis-test-ueben.html"><em>Schweiz · Technisches Verständnis: Aufgaben mit Lösung</em><strong>Technisches Verständnis 2026 kostenlos üben: Aufgaben mit Lösung</strong><span>Technisches Verständnis kostenlos üben: Zahnräder, Hebel, Rollen, Druck und Federn mit Lösungen. iPhone-App mit 5 kostenlosen Einheiten pro Tag.</span></a>
-<!-- switzerland-de end -->
-<a class="g" href="/guides/dlr-test-de.html"><em>DLR · Lufthansa-Konzern</em><strong>DLR-Test kostenlos üben 2026: App für BU und GU</strong><span>DLR-Test 2026 kostenlos üben: Vorbereitungs-App für die BU/GU-Pilotenauswahl, 5 kostenlose Einheiten pro Tag auf dem iPhone. Kostenlose Alternative zur SkyTest-Software.</span></a>
-<a class="g" href="/guides/polizei-einstellungstest-kostenlos-ueben.html"><em>Bundespolizei · Landespolizei</em><strong>Polizei Einstellungstest kostenlos üben – App 2026</strong><span>Polizei-Einstellungstest 2026 kostenlos üben: Testtrainer-App für Bundespolizei und Landespolizei, täglich kostenlos trainieren auf dem iPhone. Logik, Kopfrechnen, Merkfähigkeit, Konzentration.</span></a>
-<a class="g" href="/guides/bundeswehr-einstellungstest-cat-test-ueben.html"><em>Bundeswehr · Karrierecenter</em><strong>Bundeswehr CAT-Test üben: Aufgaben mit Lösungen</strong><span>Probiere Beispielaufgaben zu Sprache, Rechnen und Logik. Lies nach, wie der adaptive CAT funktioniert und wo du den Assessment-Trainer der Bundeswehr findest.</span></a>
-<a class="g" href="/guides/bundesheer-eignungspruefung-ueben.html"><em>Österreich · Bundesheer</em><strong>Bundesheer Eignungsprüfung 2026: psychologische Tests kostenlos üben</strong><span>Bundesheer Eignungsprüfung und Stellung 2026: die psychologischen Tests kostenlos üben, 5 kostenlose Einheiten pro Tag auf dem iPhone.</span></a>
+<section class="country" aria-labelledby="india">
+  <h2 id="india"><span class="flag" aria-hidden="true">🇮🇳</span> India</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/afcat-exam-preparation.html" lang="en"><em>Indian Air Force · AFCAT · AFSB</em><strong>Free AFCAT Practice App 2026 – AFCAT &amp; CPSS Preparation</strong><span>Free AFCAT practice app for 2026 AFCAT and CPSS preparation. 5 free sessions every day on iPhone: reasoning, maths, memory and multitasking.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<h2>Español</h2><!-- exam-pages-Español start -->
-<a class="g" href="/guides/psicotecnicos-guardia-civil-simulacro.html"><em>Guardia Civil · prueba psicotécnica</em><strong>Psicotécnicos Guardia Civil: preguntas y penalización</strong><span>Practica con preguntas resueltas para la prueba psicotécnica de la Guardia Civil. Consulta el tiempo, la nota mínima y la fórmula de penalización del BOE.</span></a>
-<!-- exam-pages-Español end -->
+<section class="country" aria-labelledby="netherlands">
+  <h2 id="netherlands"><span class="flag" aria-hidden="true">🇳🇱</span> Netherlands</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/capaciteitentest-politie-defensie.html" lang="nl"><em>Politie · Defensie</em><strong>Capaciteitentest politie en Defensie 2026: gratis oefenen</strong><span>Capaciteitentest politie en Defensie 2026 gratis oefenen: app om elke dag te oefenen op je iPhone.</span></a>
+    <a class="g" href="/guides/cognitietest-politie-oefenen.html" lang="nl"><em>Politie · cognitietest</em><strong>Cognitietest politie oefenen: patronen en woordrelaties</strong><span>Oefen cijferpatronen, letterpatronen en woordrelaties voor de cognitietest van de politie. Bekijk de uitleg en lees de regels voor tijd en hulpmiddelen.</span></a>
+    <a class="g" href="/guides/luchtverkeersleider-aandacht-oefenen.html" lang="nl"><em>Luchtverkeersleiding</em><strong>Luchtverkeersleider worden? Oefen je verdeelde aandacht</strong><span>Probeer twee korte verkeerssituaties en controleer je antwoord.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<a class="g" href="/guides/psicotecnicos-guardia-civil-policia-nacional.html"><em>Guardia Civil · Policía Nacional</em><strong>Psicotécnicos Guardia Civil y Policía Nacional 2026: app gratis</strong><span>Psicotécnicos Guardia Civil y Policía Nacional 2026: app gratis para practicar cada día en iPhone.</span></a>
+<section class="country" aria-labelledby="singapore">
+  <h2 id="singapore"><span class="flag" aria-hidden="true">🇸🇬</span> Singapore</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/rsaf-compass-pilot-selection.html" lang="en"><em>Singapore · RSAF</em><strong>Free RSAF COMPASS Practice App 2026 – Pilot Aptitude Test (Singapore)</strong><span>RSAF COMPASS aptitude test 2026 for Pilot, WSO (Fighter), AWO and UAV Pilot: what is publicly known and which free iPhone exercises give general practice.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<h2>Nederlands</h2><!-- exam-pages-Nederlands start -->
-<a class="g" href="/guides/cognitietest-politie-oefenen.html"><em>Politie · cognitietest</em><strong>Cognitietest politie oefenen: patronen en woordrelaties</strong><span>Oefen cijferpatronen, letterpatronen en woordrelaties voor de cognitietest van de politie. Bekijk de uitleg en lees de regels voor tijd en hulpmiddelen.</span></a>
-<!-- exam-pages-Nederlands end -->
+<section class="country" aria-labelledby="spain">
+  <h2 id="spain"><span class="flag" aria-hidden="true">🇪🇸</span> Spain</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/psicotecnicos-guardia-civil-policia-nacional.html" lang="es"><em>Guardia Civil · Policía Nacional</em><strong>Psicotécnicos Guardia Civil y Policía Nacional 2026: app gratis</strong><span>Psicotécnicos Guardia Civil y Policía Nacional 2026: app gratis para practicar cada día en iPhone.</span></a>
+    <a class="g" href="/guides/psicotecnicos-guardia-civil-simulacro.html" lang="es"><em>Guardia Civil · prueba psicotécnica</em><strong>Psicotécnicos Guardia Civil: preguntas y penalización</strong><span>Practica con preguntas resueltas para la prueba psicotécnica de la Guardia Civil. Consulta el tiempo, la nota mínima y la fórmula de penalización del BOE.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<a class="g" href="/guides/luchtverkeersleider-aandacht-oefenen.html"><em>Luchtverkeersleiding</em><strong>Luchtverkeersleider worden? Oefen je verdeelde aandacht</strong><span>Probeer twee korte verkeerssituaties en controleer je antwoord.</span></a>
-<a class="g" href="/guides/capaciteitentest-politie-defensie.html"><em>Politie · Defensie</em><strong>Capaciteitentest politie en Defensie 2026: gratis oefenen</strong><span>Capaciteitentest politie en Defensie 2026 gratis oefenen: app om elke dag te oefenen op je iPhone.</span></a>
+<section class="country" aria-labelledby="sweden">
+  <h2 id="sweden"><span class="flag" aria-hidden="true">🇸🇪</span> Sweden</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/hogskoleprovet-ova-gratis.html" lang="sv"><em>Sverige · Högskoleprovet</em><strong>Öva på högskoleprovet – alla åtta delprov och Hela provet</strong><span>Öva på högskoleprovets åtta delprov. Prova gratis exempel med lösningar här och gör Hela provet med 160 uppgifter i fyra tidtagna pass med Premium på iPhone.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 
-<section lang="da" id="danske-guider"><h2>Dansk · uniTEST og kvote 2</h2><a class="g" href="/guides/kvote-2-danmark.html"><em>Danmark · universitet</em><strong>uniTEST eller KU’s kvote 2-prøve?</strong><span>Sammenlign de to prøver, og find det rigtige træningsprogram.</span></a><a class="g" href="/guides/unitest-forberedelse.html"><em>SDU · uniTEST</em><strong>uniTEST-forberedelse: format og gratis opgaver</strong><span>95 spørgsmål på 150 minutter. Prøv originale eksempler med forklaring.</span></a><a class="g" href="/guides/ku-kvote-2-proeve.html"><em>Københavns Universitet · kvote 2</em><strong>KU’s kvote 2-prøve: format og øvelser</strong><span>Læs om de seks kategorier, prøv opgaver, og se vores fulde øveprøve med Premium.</span></a><p><a href="https://expectedvaluestudio.com/preflight/da/">Brain Preflight på dansk</a></p></section>
-<h2>Svenska</h2><!-- exam-pages-Svenska start -->
-<a class="g" href="/guides/hogskoleprovet-ova-gratis.html"><em>Sverige · Högskoleprovet</em><strong>Öva på högskoleprovet – alla åtta delprov och Hela provet</strong><span>Öva på högskoleprovets åtta delprov. Prova gratis exempel med lösningar här och gör Hela provet med 160 uppgifter i fyra tidtagna pass med Premium på iPhone.</span></a>
-<!-- exam-pages-Svenska end -->
+<section class="country" aria-labelledby="switzerland">
+  <h2 id="switzerland"><span class="flag" aria-hidden="true">🇨🇭</span> Switzerland</h2>
+  <h3 lang="en">English</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/aptitude-tests-switzerland.html" lang="en"><em>Switzerland · English</em><strong>Free Aptitude Test Practice Switzerland 2026 – Pilot &amp; ATC</strong><span>Free Swiss aptitude test practice app for SPHAIR, SWISS/Edelweiss DLR and Skyguide FEAST. 5 free iPhone sessions daily, any available exercise.</span></a>
+    <a class="g" href="/guides/sphair-screening-preparation.html" lang="en"><em>Switzerland · SPHAIR screening preparation</em><strong>Free SPHAIR Screening Preparation App 2026 – Swiss Pilot Test</strong><span>Prepare for SPHAIR screening with free daily iPhone practice: mental maths, memory, spatial and technical understanding. 5 sessions every day.</span></a>
+    <a class="g" href="/guides/swiss-pilot-assessment-preparation.html" lang="en"><em>Switzerland · SWISS pilot selection</em><strong>Free SWISS Pilot Assessment Preparation 2026 – DLR &amp; SPHAIR</strong><span>Free SWISS pilot selection practice on iPhone: prepare DLR-related maths, memory, spatial and mechanical skills. 5 sessions daily; SPHAIR route explained.</span></a>
+    <a class="g" href="/guides/edelweiss-pilot-assessment-preparation.html" lang="en"><em>Switzerland · Edelweiss pilot selection</em><strong>Free Edelweiss Pilot Selection Preparation 2026 – DLR Test</strong><span>Prepare Edelweiss pilot selection with free daily DLR-related practice. EFA, SPHAIR and German-language requirements explained; 5 iPhone sessions daily.</span></a>
+    <a class="g" href="/guides/skyguide-feast-test-preparation.html" lang="en"><em>Switzerland · Skyguide FEAST preparation</em><strong>Free Skyguide FEAST Test Preparation App 2026 – Swiss ATC</strong><span>Free Skyguide FEAST preparation on iPhone: mental maths, memory, attention, spatial and multitasking practice. 5 sessions daily; selection stages explained.</span></a>
+    <a class="g" href="/guides/sphair-vs-dlr-test.html" lang="en"><em>Switzerland · SPHAIR vs DLR</em><strong>SPHAIR vs DLR 2026 – Swiss Pilot Selection &amp; Free Practice</strong><span>SPHAIR or DLR for SWISS and Edelweiss? Compare screening, flight course, certificates and preparation. Start 5 free daily practice sessions on iPhone.</span></a>
+    <a class="g" href="/guides/mechanical-comprehension-practice.html" lang="en"><em>Switzerland · Mechanical comprehension: examples and answers</em><strong>Free Mechanical Comprehension Practice 2026 – App &amp; Examples</strong><span>Free mechanical comprehension practice with worked examples: gears, levers, pulleys, pressure and springs. 5 daily iPhone sessions for SPHAIR and DLR skills.</span></a>
+  </div>
+  <h3 lang="fr">Français</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/tests-aptitude-suisse.html" lang="fr"><em>Suisse · Français</em><strong>Tests d’aptitude Suisse 2026 : application gratuite pilote et ATC</strong><span>Préparation gratuite aux tests d’aptitude en Suisse : SPHAIR, DLR SWISS/Edelweiss et FEAST Skyguide. 5 sessions iPhone par jour, exercice au choix.</span></a>
+    <a class="g" href="/guides/preparation-screening-sphair.html" lang="fr"><em>Suisse · Préparation au screening SPHAIR</em><strong>Préparation SPHAIR gratuite 2026 : screening pilote sur iPhone</strong><span>Préparez le screening SPHAIR avec une application gratuite : calcul mental, mémoire, spatial et compréhension mécanique. 5 sessions iPhone par jour.</span></a>
+    <a class="g" href="/guides/selection-pilote-swiss-dlr.html" lang="fr"><em>Suisse · Sélection pilote SWISS</em><strong>Sélection pilote SWISS 2026 : préparation DLR gratuite</strong><span>Préparez la sélection pilote SWISS : calcul, mémoire, spatial et mécanique sur iPhone. 5 sessions gratuites par jour ; parcours DLR et SPHAIR expliqués.</span></a>
+    <a class="g" href="/guides/selection-pilote-edelweiss.html" lang="fr"><em>Suisse · Sélection pilote Edelweiss</em><strong>Sélection pilote Edelweiss 2026 : préparation gratuite DLR</strong><span>Préparez la sélection pilote Edelweiss : DLR, SPHAIR, EFA, allemand et mécanique. Application iPhone avec 5 sessions gratuites chaque jour.</span></a>
+    <a class="g" href="/guides/preparation-test-feast-skyguide.html" lang="fr"><em>Suisse · Préparation FEAST Skyguide</em><strong>Test FEAST Skyguide 2026 : préparation gratuite sur iPhone</strong><span>Préparez FEAST Skyguide gratuitement : calcul, mémoire, spatial, attention et multitâche. 5 sessions iPhone par jour et guide de la sélection en Suisse.</span></a>
+    <a class="g" href="/guides/sphair-ou-dlr.html" lang="fr"><em>Suisse · SPHAIR ou DLR</em><strong>SPHAIR ou DLR 2026 : choisir sa préparation pilote en Suisse</strong><span>SPHAIR ou DLR pour SWISS et Edelweiss ? Comparez screening, cours de vol, certificats et préparation gratuite sur iPhone : 5 sessions chaque jour.</span></a>
+    <a class="g" href="/guides/comprehension-mecanique-test.html" lang="fr"><em>Suisse · Compréhension mécanique : exercices corrigés</em><strong>Test de compréhension mécanique 2026 : exercices gratuits</strong><span>Compréhension mécanique : exercices corrigés gratuits sur engrenages, leviers, poulies, pression et ressorts. App iPhone, 5 sessions quotidiennes.</span></a>
+  </div>
+  <h3 lang="de">Deutsch</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/eignungstest-schweiz-kostenlos-ueben.html" lang="de"><em>Schweiz · Deutsch</em><strong>Eignungstest Schweiz 2026 kostenlos üben: Pilot und Fluglotse</strong><span>Eignungstest Schweiz kostenlos üben: SPHAIR, SWISS/Edelweiss DLR und Skyguide FEAST. 5 kostenlose iPhone-Einheiten täglich, freie Übungswahl.</span></a>
+    <a class="g" href="/guides/sphair-screening-kostenlos-ueben.html" lang="de"><em>Schweiz · SPHAIR-Screening vorbereiten</em><strong>SPHAIR-Screening 2026 kostenlos üben: Vorbereitungs-App</strong><span>SPHAIR-Screening kostenlos vorbereiten: Kopfrechnen, Gedächtnis, Raumvorstellung und Technik auf dem iPhone. 5 kostenlose Einheiten täglich.</span></a>
+    <a class="g" href="/guides/swiss-piloten-eignungstest.html" lang="de"><em>Schweiz · SWISS-Pilotenauswahl</em><strong>SWISS-Pilotenauswahl 2026: DLR-Test kostenlos vorbereiten</strong><span>SWISS-Pilotenauswahl vorbereiten: DLR, SPHAIR, Rechnen, Gedächtnis und Technik. 5 kostenlose iPhone-Einheiten pro Tag mit Brain Preflight.</span></a>
+    <a class="g" href="/guides/edelweiss-pilotenauswahl-vorbereitung.html" lang="de"><em>Schweiz · Edelweiss-Pilotenauswahl</em><strong>Edelweiss-Pilotenauswahl 2026: DLR kostenlos vorbereiten</strong><span>Edelweiss-Pilotenauswahl: DLR, SPHAIR, EFA und Deutschkenntnisse. Mit der iPhone-App täglich 5 kostenlose Einheiten für Rechnen, Gedächtnis und Technik.</span></a>
+    <a class="g" href="/guides/skyguide-feast-test-vorbereitung.html" lang="de"><em>Schweiz · Skyguide FEAST vorbereiten</em><strong>Skyguide FEAST-Test 2026 kostenlos üben: Vorbereitungs-App</strong><span>Skyguide FEAST-Test kostenlos vorbereiten: Rechnen, Gedächtnis, Raumvorstellung und Multitasking. 5 iPhone-Einheiten täglich für die Fluglotsenauswahl.</span></a>
+    <a class="g" href="/guides/sphair-oder-dlr-test.html" lang="de"><em>Schweiz · SPHAIR oder DLR</em><strong>SPHAIR oder DLR 2026: Pilotenauswahl Schweiz und Vorbereitung</strong><span>SPHAIR oder DLR für SWISS und Edelweiss? Screening, Flugkurs und Zertifikat vergleichen. Dazu täglich 5 kostenlose Übungseinheiten auf dem iPhone.</span></a>
+    <a class="g" href="/guides/technisches-verstaendnis-test-ueben.html" lang="de"><em>Schweiz · Technisches Verständnis: Aufgaben mit Lösung</em><strong>Technisches Verständnis 2026 kostenlos üben: Aufgaben mit Lösung</strong><span>Technisches Verständnis kostenlos üben: Zahnräder, Hebel, Rollen, Druck und Federn mit Lösungen. iPhone-App mit 5 kostenlosen Einheiten pro Tag.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
+
+<section class="country" aria-labelledby="united-kingdom">
+  <h2 id="united-kingdom"><span class="flag" aria-hidden="true">🇬🇧</span> United Kingdom</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/aptitude-tests-uk.html" lang="en"><em>United Kingdom</em><strong>Free Aptitude Test Practice UK 2026 – RAF DAA, Army ACT &amp; CBAT</strong><span>Free UK aptitude test practice for RAF and Royal Navy DAA, British Army ACT and RAF CBAT skills. Choose your route and train on iPhone every day for free.</span></a>
+    <a class="g" href="/guides/civil-service-verbal-numerical-test-practice.html" lang="en"><em>United Kingdom · Civil Service</em><strong>UK Civil Service Verbal and Numerical Test Practice</strong><span>Try a Civil Service verbal passage and numerical data questions. Learn when to choose Cannot say and find the official guidance on timing and calculators.</span></a>
+    <a class="g" href="/guides/raf-daa-practice-test.html" lang="en"><em>United Kingdom</em><strong>RAF &amp; Royal Navy DAA Practice Test: Work Rate and Mechanics</strong><span>Try a timed DAA work rate exercise and a worked lever question. See all six Defence Aptitude Assessment areas and the RAF and Royal Navy practice resources.</span></a>
+    <a class="g" href="/guides/army-cognitive-test-practice.html" lang="en"><em>United Kingdom</em><strong>British Army Cognitive Test Practice: ACT Verifier</strong><span>Prepare for the Army Cognitive Test (Verifier) at the soldier assessment centre. Try ACT number fluency and word rules, then use the official practice tool.</span></a>
+    <a class="g" href="/guides/raf-cbat-preparation.html" lang="en"><em>United Kingdom</em><strong>Free RAF CBAT Preparation App 2026 – Cranwell Aptitude Practice</strong><span>Free RAF CBAT skills practice on iPhone: tracking, multitasking, spatial reasoning, memory and maths. Cranwell route explained; 5 free sessions every day.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
+
+<section class="country" aria-labelledby="united-states">
+  <h2 id="united-states"><span class="flag" aria-hidden="true">🇺🇸</span> United States</h2>
+  <div class="guide-list">
+    <a class="g" href="/guides/aptitude-tests-usa.html" lang="en"><em>United States</em><strong>Free Aptitude Test Practice App USA 2026 – Military, Police, ATC, 911</strong><span>Free aptitude test practice app for 2026 US selections: AFOQT, TBAS, ASTB-E, SIFT, FAA ATSA, NYPD and CritiCall. Free iPhone practice every day, on any exercise.</span></a>
+    <a class="g" href="/guides/us-military-aviation-aptitude-tests.html" lang="en"><em>North America · AFOQT · TBAS · ASTB-E · SIFT</em><strong>Free AFOQT, TBAS, ASTB-E and SIFT Practice App 2026 – US Military Aviation Tests</strong><span>Compare the 2026 US military aviation aptitude tests (AFOQT, TBAS, ASTB-E, SIFT): who takes each one, what it measures, and which free iPhone exercises fit.</span></a>
+    <a class="g" href="/guides/asvab-practice-test.html" lang="en"><em>United States · military enlistment</em><strong>ASVAB Practice Questions and 10 Adaptive Subtests</strong><span>Try five free ASVAB questions with worked answers, then practice all 10 adaptive CAT-ASVAB subtests on iPhone and review the four AFQT subject areas.</span></a>
+    <a class="g" href="/guides/afoqt-practice-app.html" lang="en"><em>United States · Air Force officer</em><strong>AFOQT Practice Questions: Tables, Instruments and Blocks</strong><span>Try AFOQT Table Reading, Instrument Comprehension and Block Counting examples. Check each solution and see how the official subtests are timed.</span></a>
+    <a class="g" href="/guides/tbas-practice-test.html" lang="en"><em>North America</em><strong>Free TBAS Practice App 2026 – Test of Basic Aviation Skills</strong><span>Free TBAS practice app for the 2026 Test of Basic Aviation Skills: tracking, multitasking, spatial and memory drills, 5 free sessions every day on iPhone.</span></a>
+    <a class="g" href="/guides/astb-practice-test.html" lang="en"><em>North America</em><strong>Free ASTB-E Practice App 2026 – Aviation Selection Test Battery</strong><span>Free ASTB-E practice app for the 2026 Aviation Selection Test Battery: maths, spatial and divided-attention drills, 5 free sessions every day on iPhone.</span></a>
+    <a class="g" href="/guides/sift-practice-test.html" lang="en"><em>North America</em><strong>Free SIFT Practice App 2026 – Army Flight Aptitude Test</strong><span>Free SIFT practice app for the 2026 Army Selection Instrument for Flight Training: maths, mental rotation and pattern drills, 5 free sessions every day on iPhone.</span></a>
+    <a class="g" href="/guides/brain-preflight-vs-mometrix-afoqt.html" lang="en"><em>North America</em><strong>Free Mometrix AFOQT Alternative 2026 – AFOQT Practice App</strong><span>Free alternative to Mometrix for AFOQT practice in 2026: free practice every day on iPhone for maths, spatial and visual-checking skills. Mometrix sells a $79.99/month course and study guide.</span></a>
+    <a class="g" href="/guides/atsa-test-preparation.html" lang="en"><em>North America</em><strong>Free ATSA Practice App 2026 – Air Traffic Skills Assessment</strong><span>Free ATSA practice app for the 2026 FAA Air Traffic Skills Assessment. 5 free air traffic controller test sessions every day on iPhone, a free alternative to paid ATSA prep.</span></a>
+    <a class="g" href="/guides/brain-preflight-vs-atsapro.html" lang="en"><em>North America</em><strong>Free ATSAPro Alternative 2026 – ATSA Practice App</strong><span>Free ATSAPro alternative for the 2026 ATSA: Brain Preflight gives 5 free ATSA practice sessions every day on iPhone. ATSAPro is a $9.99 paid app.</span></a>
+    <a class="g" href="/guides/border-patrol-entrance-exam-practice.html" lang="en"><em>United States · U.S. Border Patrol</em><strong>Border Patrol Entrance Exam: Logical Reasoning Practice</strong><span>Try three BPA logical reasoning questions. Use only the passage to decide what must be true and what cannot be concluded, then compare your answers.</span></a>
+    <a class="g" href="/guides/nypd-police-exam-preparation.html" lang="en"><em>US Police · NYPD · civil service</em><strong>Free NYPD Exam Practice App 2026 – Police Officer Exam</strong><span>Free NYPD exam practice app for the 2026 police officer exam. 5 free sessions every day on iPhone: memory, reasoning and attention.</span></a>
+    <a class="g" href="/guides/911-dispatcher-criticall-preparation.html" lang="en"><em>911 Dispatcher · CritiCall</em><strong>Free CritiCall Practice App 2026 – 911 Dispatcher Test</strong><span>Free CritiCall practice app for the 2026 911 dispatcher test. 5 free sessions every day on iPhone: multitasking, memory, data entry-style checking.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
+
+<section class="country" aria-labelledby="international">
+  <h2 id="international"><span class="flag" aria-hidden="true">🌐</span> International</h2>
+  <h3 lang="en">English</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/aptitude-test-practice-questions.html" lang="en"><em>Preparation questions</em><strong>Free Aptitude Test Practice: Questions &amp; Answers 2026</strong><span>Aptitude test preparation questions answered: free daily practice, pilot and ATC tests, SPHAIR vs DLR, mechanical reasoning, offline access and study routines.</span></a>
+    <a class="g" href="/guides/compass-test.html" lang="en"><em>EPST · Europe, India, Gulf, Asia</em><strong>Free COMPASS Pilot Aptitude Test Practice App 2026</strong><span>Free COMPASS pilot aptitude test practice app for 2026. Examples plus 5 free sessions every day on iPhone: maths, memory, spatial and tracking skills.</span></a>
+    <a class="g" href="/guides/cut-e-test.html" lang="en"><em>Aon · online screening</em><strong>Free cut-e Pilot Test Practice App 2026 – Aon Scales</strong><span>Free cut-e pilot test practice app for 2026 Aon pilot aptitude tests. Examples plus 5 free sessions every day on iPhone.</span></a>
+    <a class="g" href="/guides/pilapt-test.html" lang="en"><em>Pilot selection · verify your invitation</em><strong>Free PILAPT Practice App 2026 – Pilot Aptitude Test</strong><span>Free PILAPT practice app for the 2026 pilot aptitude test. 5 free pilot aptitude assessment sessions every day on iPhone: tracking, memory, maths and spatial reasoning.</span></a>
+    <a class="g" href="/guides/dlr-test.html" lang="en"><em>German Aerospace Center · Lufthansa Group</em><strong>Free DLR Test Preparation App 2026 – BU/GU Pilot Test</strong><span>Free DLR test preparation app for the 2026 BU/GU pilot selection and DLR CBT. 5 free sessions every day on iPhone, a free alternative to paid SkyTest software.</span></a>
+    <a class="g" href="/guides/feast-test-atc.html" lang="en"><em>EUROCONTROL · air traffic control</em><strong>Free FEAST Practice App 2026 – EUROCONTROL ATC Test</strong><span>Free FEAST practice app for the 2026 EUROCONTROL air traffic controller test. 5 free ATC aptitude sessions every day on iPhone.</span></a>
+    <a class="g" href="/guides/aon-assessment-jobs.html" lang="en"><em>Aon · banks, consulting, graduate schemes</em><strong>Free Aon Assessment Practice App 2026 – Job Aptitude Tests</strong><span>Free Aon assessment practice app for 2026 job aptitude tests (cut-e scales). 5 free sessions every day on iPhone: numbers, logic, memory and attention.</span></a>
+    <a class="g" href="/guides/brain-preflight-vs-skytest-lite.html" lang="en"><em>iPhone apps</em><strong>Free SkyTest Alternative 2026 – DLR BU/GU Practice App</strong><span>Free SkyTest alternative for the 2026 DLR BU/GU pilot test: 5 free practice sessions every day on iPhone, versus the paid SkyTest BU/GU Lite app.</span></a>
+    <a class="g" href="/guides/brain-preflight-vs-pilot-aptitude-pro.html" lang="en"><em>iPhone apps</em><strong>Free Pilot Aptitude Pro Alternative 2026 – iPhone App</strong><span>Free Pilot Aptitude Pro alternative for 2026 pilot aptitude tests: 5 free practice sessions every day on iPhone, no purchase required.</span></a>
+  </div>
+  <h3 lang="fr">Français</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/questions-preparation-tests-psychotechniques.html" lang="fr"><em>Questions de préparation</em><strong>Tests psychotechniques gratuits : questions et réponses 2026</strong><span>Réponses aux questions de préparation psychotechnique : entraînement gratuit, sélection pilote, FEAST, SPHAIR ou DLR, mécanique et exercices hors ligne.</span></a>
+    <a class="g" href="/guides/test-compass-fr.html" lang="fr"><em>EPST · guide en français</em><strong>Test COMPASS pilote 2026 : application gratuite d’entraînement</strong><span>Test COMPASS pilote 2026 : application gratuite d’entraînement au test d’aptitude, 5 sessions gratuites par jour sur iPhone.</span></a>
+    <a class="g" href="/guides/test-pilapt-fr.html" lang="fr"><em>Sélection pilote · guide en français</em><strong>Test PILAPT 2026 : application gratuite pour s’entraîner</strong><span>Test PILAPT 2026 : application gratuite pour s’entraîner au test d’aptitude pilote, 5 sessions gratuites par jour sur iPhone.</span></a>
+  </div>
+  <h3 lang="de">Deutsch</h3>
+  <div class="guide-list">
+    <a class="g" href="/guides/eignungstest-vorbereitung-fragen-antworten.html" lang="de"><em>Fragen zur Vorbereitung</em><strong>Eignungstest kostenlos üben: Fragen und Antworten 2026</strong><span>Fragen zur Eignungstest-Vorbereitung: kostenlos üben, Pilot und Fluglotse, SPHAIR oder DLR, technisches Verständnis, Offline-Training und tägliche Routine.</span></a>
+    <a class="g" href="/guides/dlr-test-de.html" lang="de"><em>DLR · Lufthansa-Konzern</em><strong>DLR-Test kostenlos üben 2026: App für BU und GU</strong><span>DLR-Test 2026 kostenlos üben: Vorbereitungs-App für die BU/GU-Pilotenauswahl, 5 kostenlose Einheiten pro Tag auf dem iPhone. Kostenlose Alternative zur SkyTest-Software.</span></a>
+  </div>
+  <a class="back" href="#countries">Back to countries</a>
+</section>
 <a class="cta" href="https://apps.apple.com/app/apple-store/id6794363864?pt=129217861&amp;ct=hub-guide&amp;mt=8">Download Brain Preflight on the App Store</a>
 </main>
 <footer><a href="/preflight/">Home</a> · <a href="/preflight-legal/">Support &amp; privacy</a></footer>
+<script>
+const language = document.getElementById("guide-language");
+const countries = document.querySelectorAll(".country");
+function filterGuides() {
+  for (const section of countries) {
+    for (const list of section.querySelectorAll(".guide-list")) {
+      for (const card of list.querySelectorAll("a.g")) {
+        card.hidden = Boolean(language.value && card.lang !== language.value);
+      }
+      list.hidden = !list.querySelector("a.g:not([hidden])");
+      const heading = list.previousElementSibling;
+      if (heading.tagName === "H3") heading.hidden = list.hidden;
+    }
+    section.hidden = !section.querySelector(".guide-list:not([hidden])");
+    const id = section.getAttribute("aria-labelledby");
+    document.querySelector('.countries a[href="#' + id + '"]').hidden = section.hidden;
+  }
+}
+language.addEventListener("change", filterGuides);
+document.querySelector(".language-filter").hidden = false;
+filterGuides();
+</script>
 </body>
 </html>

@@ -17,7 +17,7 @@
   "atsa-practice": {"FAA ATSA": "atsa_faa"},
   "atsa-test-preparation": {"FAA ATSA": "atsa_faa"},
   "border-patrol-entrance-exam-practice": {"Border Patrol · Logical Reasoning": "us_bpa?game=us_bpa_logic"},
-  "brain-preflight-ou-pilotest": {"Cadets Air France · PSY0": "af_psy0"},
+  "brain-preflight-ou-pilotest": {"Cadets Air France · PSY0": "af_psy0", "Cadets Air France · Psy1": "af_psy1", "Pilotes pro Air France / HOP · Psy1": "af_pro"},
   "brain-preflight-vs-atsapro": {"FAA ATSA": "atsa_faa"},
   "brain-preflight-vs-mometrix-afoqt": {"AFOQT": "us_mil_avia"},
   "brain-preflight-vs-pilot-aptitude-pro": {"DLR": "dlr", "Airline cadet / cut-e skills": "cute", "Air France cadets · PSY0": "af_psy0"},
@@ -80,11 +80,11 @@
   "test-compass-fr": {"Coordination · entraînement pilote": "all?game=psychomoteur"},
   "test-pilapt-fr": {"Coordination · entraînement pilote": "all?game=psychomoteur"},
   "test-psychotechnique-gendarmerie": {"Gendarmerie · tests psychotechniques": "gend"},
-  "test-psychotechnique-pilote": {"Cadets Air France · PSY0": "af_psy0"},
+  "test-psychotechnique-pilote": {"Cadets Air France · PSY0": "af_psy0", "Cadets Air France · Psy1": "af_psy1", "Pilotes pro Air France / HOP · Psy1": "af_pro"},
   "test-psychotechnique-sncf-ratp": {"SNCF / RATP · conduite": "rail"},
   "tests-aptitude-suisse": {"SPHAIR": "ch_sphair", "DLR": "dlr", "Skyguide / FEAST · contrôle aérien": "atc"},
   "tests-entree-enpq-police-quebec": {"Police québécoise · exercices d’aptitude": "qc_police"},
-  "tests-psychotechniques-france": {"Cadets Air France · PSY0": "af_psy0", "ENAC EPL": "enac_epl", "EOPN": "mil", "Police": "police", "Gendarmerie": "gend", "SNCF / RATP": "rail", "Contrôle aérien": "atc"},
+  "tests-psychotechniques-france": {"Cadets Air France · PSY0": "af_psy0", "Cadets Air France · Psy1": "af_psy1", "Pilotes pro Air France / HOP · Psy1": "af_pro", "ENAC EPL": "enac_epl", "EOPN": "mil", "Police": "police", "Gendarmerie": "gend", "SNCF / RATP": "rail", "Contrôle aérien": "atc"},
   "unitest-forberedelse": {"SDU · uniTEST": "dk_sdu_unitest"},
   "us-military-aviation-aptitude-tests": {"AFOQT": "us_mil_avia", "TBAS": "us_tbas", "ASTB-E": "us_astb", "SIFT": "us_sift"}
 }
