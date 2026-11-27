@@ -15,3 +15,5 @@ kbd{font:600 12px/1 ui-monospace,monospace;border:1px solid var(--line);border-b
 #rd-ids{display:grid;grid-template-columns:repeat(9,1fr);gap:5px}#rd-ids button{padding:12px 0;min-height:0;font:700 17px ui-monospace,monospace}#rd-ids button:disabled{opacity:.3;cursor:default}#rd-ids button.hit{background:var(--amber)}
 .rd-clear{font-weight:600;border:1.5px solid var(--purple);color:var(--purple)}.rd-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}
 @media(max-width:760px){.rd-body{grid-template-columns:1fr}.rd-summary{grid-template-columns:repeat(2,1fr)}.rd-keys{display:none}}
+
+.install-note{display:block;margin-top:.65rem;font-size:.9rem;line-height:1.5}.install-note a{color:var(--purple);text-decoration:underline}

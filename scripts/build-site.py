@@ -3,6 +3,7 @@ from pathlib import Path
 import re
 import shutil
 import xml.etree.ElementTree as ET
+from guide_practice import add_practice_links
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist"
@@ -41,7 +42,7 @@ def generate():
             continue
         # Absolute studio links keep shared assets, legal pages and app calls to action working.
         page = re.sub(r'(["\'(=])(/(?:assets/|preflight/|preflight-legal/))', r'\g<1>' + STUDIO + r'\g<2>', page)
-        (guides_dir / path.name).write_text(page)
+        (guides_dir / path.name).write_text(add_practice_links(page, path.stem))
 
     for path in [OUT / "preflight/index.html", OUT / "llms.txt"]:
         text = path.read_text().replace(STUDIO + GUIDES, PREFLIGHT + GUIDES)
