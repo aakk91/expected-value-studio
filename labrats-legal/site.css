@@ -75,7 +75,10 @@ footer a{text-decoration:none}footer a:hover{color:var(--ink)}
 .band{padding:88px 0 0}
 .band>header{max-width:40em;margin-bottom:40px}
 .band>header p{color:var(--soft);font-size:19px;margin-top:14px}
-.split{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;align-items:center;background:var(--card);border-radius:28px;padding:48px 56px;box-shadow:var(--shadow)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;align-items:center;
+  /* The same static Paper Design fluted-glass render used on the in-app vial rack. */
+  background:var(--card) url("screens/vial-glass.png") center / 102% 100% no-repeat;
+  border-radius:28px;padding:48px 56px;box-shadow:var(--shadow)}
 .split+.split{margin-top:20px}
 .split.flip{grid-template-columns:300px minmax(0,1fr)}
 .split.flip .phone{order:-1}
