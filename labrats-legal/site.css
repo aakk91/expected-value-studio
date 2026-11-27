@@ -76,11 +76,14 @@ footer a{text-decoration:none}footer a:hover{color:var(--ink)}
 .band>header{max-width:40em;margin-bottom:40px}
 .band>header p{color:var(--soft);font-size:19px;margin-top:14px}
 .split{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;align-items:center;
+  --plate:#1c1c1e;--ink:#f5f5f7;--soft:#c4c5ca;color:var(--ink);
   /* The same static Paper Design fluted-glass render used on the in-app vial rack. */
-  background:var(--card) url("screens/vial-glass.png") center / 102% 100% no-repeat;
+  background:var(--plate) url("screens/vial-glass.png") center / 102% 100% no-repeat;
   border-radius:28px;padding:48px 56px;box-shadow:var(--shadow)}
 .split+.split{margin-top:20px}
-.split.flip{grid-template-columns:300px minmax(0,1fr)}
+.split.flip{grid-template-columns:300px minmax(0,1fr);
+  --plate:#faf9f7;--ink:#16171a;--soft:#4e5056;--paper:#efede8;--sep:rgba(22,23,26,.25);
+  --speed:#8a6500;--memory:#00708a;--reasoning:#6544d9;--spatial:#b04e00;--multitask:#2e62d9}
 .split.flip .phone{order:-1}
 .split h3{font-size:28px;letter-spacing:-.015em;margin-bottom:14px}
 .split p{color:var(--soft)}
