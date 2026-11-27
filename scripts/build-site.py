@@ -4,6 +4,7 @@ import re
 import shutil
 import xml.etree.ElementTree as ET
 from guide_practice import add_practice_links
+from country_flags import decorate, guide_countries
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist"
@@ -31,6 +32,7 @@ def generate():
     guides_dir = OUT / "guides"
     guides_dir.mkdir()
     shutil.copytree(ROOT / "guides/atsa-practice", guides_dir / "atsa-practice")
+    countries = guide_countries((ROOT / "guides/index.html").read_text())
     aliases = {"index.html": ""}
     for path in sorted((ROOT / "guides").glob("*.html")):
         page = path.read_text().replace(STUDIO + GUIDES, PREFLIGHT + GUIDES)
@@ -42,11 +44,16 @@ def generate():
             continue
         # Absolute studio links keep shared assets, legal pages and app calls to action working.
         page = re.sub(r'(["\'(=])(/(?:assets/|preflight/|preflight-legal/))', r'\g<1>' + STUDIO + r'\g<2>', page)
-        (guides_dir / path.name).write_text(add_practice_links(page, path.stem))
+        page = add_practice_links(page, path.stem)
+        (guides_dir / path.name).write_text(decorate(page, "guides/" + path.name, countries))
 
     for path in [OUT / "preflight/index.html", OUT / "llms.txt"]:
         text = path.read_text().replace(STUDIO + GUIDES, PREFLIGHT + GUIDES)
         path.write_text(text.replace('href="/guides/', 'href="' + PREFLIGHT + GUIDES))
+
+    for folder in ("preflight", "preflight-legal", "guides/atsa-practice"):
+        for path in (OUT / folder).rglob("*.html"):
+            path.write_text(decorate(path.read_text(), path.relative_to(OUT).as_posix(), countries))
 
     sitemap = ET.parse(ROOT / "sitemap.xml")
     studio_urls = sitemap.getroot()

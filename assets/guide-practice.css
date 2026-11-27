@@ -17,7 +17,7 @@ a.bp-download {
   text-align: center; text-decoration: none;
 }
 .bp-intro { margin: .85rem 0; }
-.bp-practice .bp-practice-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .4rem; }
+.bp-practice .bp-practice-link { display: inline-flex; align-items: center; gap: .35rem; min-height: 44px; padding: 0 .4rem; }
 .bp-practice .bp-download, .bp-practice-repeat .bp-download { color: #22123a; text-decoration: none; }
 .bp-practice small { margin: .5rem 0 1rem; }
 .bp-practice-option { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-right: .6rem; }
